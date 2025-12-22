@@ -16,9 +16,9 @@
 - Vanilla JavaScript (без библиотек)
 
 ### Скриншоты:
-![Главная страница](screenshots/home.png)
-![Каталог](screenshots/catalog.png)
-![Страница товара](screenshots/product.png)
+![Главная страница](screenshots/home.jpg)
+![Каталог](screenshots/catalog.jpg)
+![Страница товара](screenshots/product.jpg)
 
 ### Как запустить:
 1. Склонируй репозиторий
