@@ -1,0 +1,335 @@
+@import "./reset.css";
+@import "./blocks/header.css";
+@import "./blocks/breadcrumbs.css";
+@import "./blocks/catalog.css";
+@import "./blocks/footer.css";
+@import "./blocks/product.css";
+
+/* font SF */
+  @font-face {
+    font-family: "SFBlack"; 
+    src: url("../fonts/font-SF-Pro-Display/SF-Pro-Display-Black.otf"); 
+    font-style: normal; 
+    font-weight: 800; 
+  }
+  @font-face {
+    font-family: "SFBold"; 
+    src: url("../fonts/font-SF-Pro-Display/SF-Pro-Display-Bold.otf"); 
+    font-style: normal; 
+    font-weight: 700; 
+  } 
+  @font-face {
+    font-family: "SFHeavy"; 
+    src: url("../fonts/font-SF-Pro-Display/SF-Pro-Display-Heavy.otf"); 
+    font-style: normal; 
+    font-weight: normal; 
+  } 
+  @font-face {
+    font-family: "SFLight"; 
+    src: url("../fonts/font-SF-Pro-Display/SF-Pro-Display-Light.otf"); 
+    font-style: normal; 
+    font-weight: 300; 
+  } 
+  @font-face {
+    font-family: "SFMedium"; 
+    src: url("../fonts/font-SF-Pro-Display/SF-Pro-Display-Medium.otf"); 
+    font-style: normal; 
+    font-weight: 500; 
+  } 
+  @font-face {
+    font-family: "SFRegular"; 
+    src: url("../fonts/font-SF-Pro-Display/SF-Pro-Display-Regular.otf"); 
+    font-style: normal; 
+    font-weight: 400; 
+  } 
+  @font-face {
+    font-family: "SFSemiBold"; 
+    src: url("../fonts/font-SF-Pro-Display/SF-Pro-Display-Semibold.otf"); 
+    font-style: normal; 
+    font-weight: 600; 
+  } 
+  @font-face {
+    font-family: "SFThin"; 
+    src: url("../fonts/font-SF-Pro-Display/SF-Pro-Display-Thin.otf"); 
+    font-style: normal; 
+    font-weight: 100; 
+  } 
+  @font-face {
+    font-family: "SFUltraLight"; 
+    src: url("../fonts/font-SF-Pro-Display/SF-Pro-Display-Ultralight.otf"); 
+    font-style: normal; 
+    font-weight: 200; 
+  } 
+/*  */
+
+/* Base styles */
+  :root {
+    --font-regular: "SFRegular", sans-serif;
+    --font-medium: "SFMedium", sans-serif;
+    --font-semiBold: "SFSemiBold", sans-serif;
+
+    --main-black: #000000;
+    --main-noactive: #A4A4A4;
+    --main-white: #ffffff;
+    --card-bg: #F6F6F6;
+    --search-bg: #F5F5F5;
+    --border-input: #9F9F9F;
+    --main-charcoal: #2E2E2E;
+  }
+
+  body {
+    font-family: var(--font-medium);
+    background: var(--main-white);
+    color: var(--main-black);
+  }
+
+  .black-btn {
+    max-width: 183px;
+    width: 100%;
+    height: 48px;
+    border-radius: 8px;
+    color: var(--main-white);
+    font-family: var(--font-medium);
+    font-size: 14px;
+    line-height: 24%;
+    background: var(--main-black);
+  }
+
+  div[role="search"] {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    height: 56px;
+    padding: 20px;
+    border-radius: 8px;
+    background: var(--search-bg);
+    color: #656565;
+    font-size: 14px;
+    line-height: 18%;
+  }
+  div[role="search"] input {
+    width: 100%;
+  }
+  div[role="search"] button {
+    font-size: 16px;
+  }
+  div[role="search"].small-search {
+    height: 40px;
+  }
+
+/* checkbox styles */
+
+  input.original-checkbox {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .custom-checkbox {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 15px;
+    user-select: none;
+  }
+
+  .checkbox-mark {
+    width: 16px;
+    height: 16px;
+    padding: 6px;
+    margin-right: 8px;
+    border-radius: 3px;
+    border: 1px solid var(--border-input);
+    background: var(--main-white);
+    position: relative;
+    transition: all .2s ease;
+  }
+
+  input.original-checkbox:checked + .checkbox-mark {
+    background: var(--main-black);
+    border-color: var(--main-black);
+  }
+
+  input.original-checkbox:checked + .checkbox-mark::after {
+    content: '';
+    position: absolute;
+    top: 2px; left: 4px;
+    width: 6px;
+    height: 9px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    border-radius: 2px;
+    transform: rotate(45deg);
+  }
+
+/*  */
+
+
+/* input range styles */
+
+  input[type="range"] {
+    position: relative;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, #414141 var(--value, 50%), #CECECE var(--value, 50%));
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+  }
+
+  input[type="range"]::-webkit-slider-runnable-track {
+    height: 4px;
+    background: linear-gradient(to right, #414141 var(--value, 50%), #CECECE var(--value, 50%));
+    border-radius: 2px;
+    border: none;
+  }
+
+  input[type="range"]::after {
+    content: "";
+    position: absolute;
+    left: 0; top: -4px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--main-black);
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 12px;
+    height: 12px;
+    background: var(--main-black);
+    border-radius: 50%;
+    margin-top: -4px;
+    cursor: grab;
+  }
+
+  /* Firefox */
+
+  input[type="range"]::-moz-range-track {
+      height: 4px;
+      background: linear-gradient(to right, #414141 var(--value, 50%), #CECECE var(--value, 50%));
+      border-radius: 2px;
+      border: none;
+  }
+
+  input[type="range"]::-moz-range-thumb {
+      width: 12px;
+      height: 12px;
+      background: var(--main-black);
+      border-radius: 50%;
+      cursor: grab;
+  }
+
+  input[type="range"]::-moz-range-progress {
+    background: #414141;
+    height: 4px;
+    border-radius: 2px;
+  }
+
+/*  */
+
+
+/* link styles */
+
+  a {
+    color: var(--main-noactive);
+    transition: color .2s ease
+  }
+  a.active, a:hover {
+    color: var(--main-black);
+    cursor: pointer;
+  }
+
+/*  */
+
+/* Select styles */
+  .select-custom {
+    position: relative;
+    width: 256px;
+    height: 40px;
+  }
+
+  .select-custom select {
+    padding: 8px 16px;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    box-shadow: 0 0 0 0.5px #D4D4D4;
+    outline: none;
+    cursor: pointer;
+
+    font-family: "SFRegular";
+    font-size: 15px;
+    letter-spacing: -0.005em;
+    line-height: 16px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+  .select-custom:after {
+    content: "";
+    position: absolute;
+    right: 16px; top: 10px;
+    width: 10px;
+    height: 10px;
+    border: solid #9F9F9F;
+    border-width: 0 1px 1px 0;
+    transform: rotate(45deg);
+    transition: transform .2s ease;
+  }
+
+  .select-custom.active:after {
+    transform: rotate(-135deg);
+  }
+/*  */
+
+/* Custom scrollbar */
+  .custom-scrollbar::-webkit-scrollbar {width: 2px;}
+  .custom-scrollbar::-webkit-scrollbar-track {background: #D9D9D9; border-radius: 2px;}
+  .custom-scrollbar::-webkit-scrollbar-thumb {background: #5D5D5D; border-radius: 2px;}
+/*  */
+
+.flex-container {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 10px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+  .container {
+    max-width: 600px;
+  }
+  .select-custom {
+    width: 164px;
+    height: 56px;
+  }
+  .select-custom select {
+    padding: 16px;
+  }
+  .select-custom::after {
+    top: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .black-btn {
+    max-width: 140px;
+  }
+
+  .container {
+    max-width: 344px;
+  }
+}

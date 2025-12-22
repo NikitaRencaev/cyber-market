@@ -1,0 +1,106 @@
+.footer {
+    padding: 104px 0;
+    background: var(--main-black);
+    color: var(--main-white);
+}
+
+.footer__content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.footer__top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__logo-text {
+    display: flex;
+    max-width: 384px;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.footer-logo__text {
+    font-size: 14px;
+    line-height: 1.705em;
+    color: #CFCFCF;
+}
+
+.footer__nav {
+    display: flex;
+    gap: 32px;
+}
+
+.footer__nav-column {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 15vw;
+}
+
+.footer__nav-title {
+    font-family: "SFSemiBold";
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.footer__nav-list {
+    display: flex;
+    flex-direction: column;
+
+    font-family: "SFLight";
+    font-size: 14px;
+    color: #CFCFCF;
+    line-height: 32px;
+}
+
+.footer__nav-list a {
+    color: #CFCFCF;
+}
+.footer__nav-list a:hover {color: #CFCFCF;}
+
+.footer__social {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.footer__social a i {
+    color: var(--main-white);
+    width: 16px;
+    height: 16px;
+}
+
+@media (max-width: 500px) {
+    .footer {
+        background: #181818;
+        padding: 48px 0;
+    }
+
+    .footer__content {
+        align-items: center;
+    }
+
+    .footer__top, .footer__nav {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .footer__logo-text {
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-logo__text {
+        font-family: "SFRegular";
+        font-size: 13px;
+    }
+
+    .footer__nav-column {
+        width: auto;
+        align-items: center;
+        text-align: center;
+    }
+}

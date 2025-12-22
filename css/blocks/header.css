@@ -1,0 +1,144 @@
+.header__top {
+    display: flex;
+    align-items: center;
+    padding: 16px 0;
+    gap: 32px;
+}
+
+.header__logo img {
+    min-width: 95px;
+}
+
+.header__search {
+    max-width: 433px;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    gap: 52px;
+}
+
+.header__nav a {
+    white-space: nowrap;
+}
+
+.header__actions {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.header__actions img {
+    min-width: 25px;
+}
+
+.header__nav-categories {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+}
+
+.header__nav-categories::after {
+    content: "";
+    position: absolute;
+    left: 0; right: 0;
+    height: 48px;
+    width: 100%;
+    background: var(--main-charcoal);
+    z-index: -1;
+}
+
+.header-nav-categories__btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.header-nav-categories__btn span {
+    color: var(--main-white);
+    opacity: 0.5;
+    line-height: 32px;
+}
+
+.header-nav-categories__line {
+    width: 1px;
+    height: 24px;
+    background: var(--main-white);
+    opacity: 0.2;
+}
+
+.header__burger-menu {
+    display: none;
+}
+
+.header-burger-menu__btn {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.header-burger-menu__line {
+    width: 25px;
+    height: 2px;
+    background: var(--main-black);
+    transition: all .5s ease;
+}
+
+/* Анимация для бургер меню (включается с помощью JavaScript) */
+@keyframes burgerAnimationLine1 {
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(7px) rotate(0deg);}
+    100% {transform: translateY(7px) rotate(45deg);}
+}
+@keyframes burgerAnimationLine2 {
+    50% {opacity: 1;}
+    51% {opacity: 0;}
+    100% {opacity: 0;}
+}
+@keyframes burgerAnimationLine3 {
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(-7px) rotate(0deg);}
+    100% {transform: translateY(-7px) rotate(-45deg);}
+}
+/*  */
+
+
+@media (max-width: 800px) {
+    .header__search[role="search"] {
+        display: none;
+    }
+    .header__top {
+        justify-content: space-between;
+    }
+
+    .header__nav-categories img {
+        width: 20px;
+    }
+    .header__nav-categories span {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 630px) {
+    .header__nav {
+        display: none;
+    }
+
+    .header__actions {
+        display: none;
+    }
+
+    .header__nav-categories {
+        display: none;
+    }
+
+    .header__burger-menu {
+        display: block;
+    }
+}

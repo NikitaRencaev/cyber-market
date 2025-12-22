@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber - Онлайн маркет для покупок в интернете</title>
+
+    <link rel="icon" href="./img/favicon.icon.ico">
+    <link rel="stylesheet" href="fonts/font-awesome/css/all.css" />
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="header__top">
+                    <a href="./index.html" class="header__logo">
+                        <img src="./img/header/header-logo.png" alt="Logo 'cyber'">
+                    </a>
+
+                    <div class="header__search" role="search">
+                        <button class="header__search-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        <input type="search" placeholder="Search">
+                    </div>
+
+                    <nav class="header__nav">
+                        <a href="#" class="active">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Contact Us</a>
+                        <a href="#">Blog</a>
+                    </nav>
+
+                    <div class="header__actions">
+                        <button class="header-actions__wishlist" aria-label="Избранное">
+                            <img src="./img/header/wishlist-icon.svg" alt="Избранное">
+                        </button>
+
+                        <button class="header-actions__cart" aria-label="Корзина">
+                            <img src="./img/header/cart-icon.svg" alt="Корзина">
+                            <span id="cartNotification"></span>
+                        </button>
+
+                        <a href="#" aria-label="Профиль" class="header-actions__profile">
+                            <img src="./img/header/profile-icon.svg" alt="Профиль">
+                        </a>
+                    </div>
+
+                    <!-- Mobile  -->
+                    <div class="header__burger-menu">
+                        <button class="header-burger-menu__btn">
+                            <div class="header-burger-menu__line burger-line-1"></div>
+                            <div class="header-burger-menu__line burger-line-2"></div>
+                            <div class="header-burger-menu__line burger-line-3"></div>
+                        </button>
+                    </div>
+                    <!--  -->
+                </div>
+
+                <nav class="header__nav-categories">
+                    <button class="header-nav-categories__btn">
+                        <img src="./img/header/Phones.svg" alt="Категория: Телефоны">
+                        <span>Phones</span>                  
+                    </button>
+
+                    <div class="header-nav-categories__line"></div>
+
+                    <button class="header-nav-categories__btn">
+                        <img src="./img/header/Computers.svg" alt="Категория: Компьютеры">
+                        <span>Computers</span>
+                    </button>
+
+                    <div class="header-nav-categories__line"></div>
+
+                    <button class="header-nav-categories__btn">
+                        <img src="./img/header/Gaming.svg" alt="Категория: Консоли">
+                        <span>Smart Watches</span>
+                    </button>
+
+                    <div class="header-nav-categories__line"></div>
+
+                    <button class="header-nav-categories__btn">
+                        <img src="./img/header/Cameras.svg" alt="Категория: Камеры">
+                        <span>Cameras</span>                   
+                    </button>
+
+                    <div class="header-nav-categories__line"></div>
+
+                    <button class="header-nav-categories__btn">
+                        <img src="./img/header/Headphones.svg" alt="Категория: Наушники">
+                        <span>Headpones</span>
+                    </button>
+
+                    <div class="header-nav-categories__line"></div>
+
+                    <button class="header-nav-categories__btn">
+                        <img src="./img/header/Gaming.svg" alt="Категория: Игровое">
+                        <span>Gaming</span>                  
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="breadcrumbs">
+            <div class="container">
+                <nav class="breadcrumbs__nav">
+                    <a href="#">Home</a>
+                    <div class="breadcrumbs__arrow"></div>
+                    <a href="#">Catalog</a>
+                    <div class="breadcrumbs__arrow"></div>
+                    <a href="#">Smartphones</a>
+                    <div class="breadcrumbs__arrow"></div>
+                    <a href="#">Apple</a>
+                    <div class="breadcrumbs__arrow"></div>
+                    <a href="#" class="active">iPhone 14 Pro Max</a>
+                </nav>
+            </div>
+        </section>
+
+        <section class="product">
+            <div class="container">
+                <div class="product__content">
+                    <div class="product__photos">
+                        <div class="product__swith-img">
+                            <img src="./img/catalog/products/iphone/Iphone 14 Pro Max/Iphone 14 pro 128gb deep-purple.png" class="active" alt="Show phone">
+                            <img src="./img/catalog/products/iphone/Iphone 14 Pro Max/Iphone 14 pro 128gb deep-purple front.png" alt="Show phone front">
+                            <img src="./img/catalog/products/iphone/Iphone 14 Pro Max/Iphone 14 pro 128gb deep-purple behind.png" alt="Show phone behind">
+                            <img src="./img/catalog/products/iphone/Iphone 14 Pro Max/Iphone 14 pro 128gb deep-purple askance.png" alt="Show phone askance">
+                        </div>
+
+                        <div class="product__current-img">
+                            <img src="./img/catalog/products/iphone/Iphone 14 Pro Max/Iphone 14 pro 128gb deep-purple big.png" alt="Show the phone in a large picture">
+                        </div>
+                    </div>
+
+                    <div class="product__info-block">
+                        <h1 class="product__name">
+                            Apple iPhone 14 Pro Max
+                        </h1>
+
+                        <div class="product__price-block">
+                            <h2 class="product__price" id="productPrice">
+                                $1399
+                            </h2>
+
+                            <span id="pastPrice">$1499</span>
+                        </div>
+
+                        <div class="product__color-block">
+                            <p>Select color:</p>
+
+                            <div class="product__colors-btns">
+                                <button class="product__color-btn" value="black" name="color"></button>
+                                <button class="product__color-btn" value="purple" name="color"></button>
+                                <button class="product__color-btn" value="red" name="color"></button>
+                                <button class="product__color-btn" value="yellow" name="color"></button>
+                                <button class="product__color-btn" value="white" name="color"></button>
+                            </div>
+                        </div>
+
+                        <div class="product__memory">
+                            <button class="product__memory-btn noactive" name="memory" value="128GB">128GB</button>
+                            <button class="product__memory-btn" name="memory" value="256GB">256GB</button>
+                            <button class="product__memory-btn" name="memory" value="512GB">512GB</button>
+                            <button class="product__memory-btn active" name="memory" value="1TB">1TB</button>
+                        </div>
+
+                        <div class="product__characteristics-grid">
+                            <div class="product__characteristics-element">
+                                <img src="./img/product-info/screen-size.png" alt="Characteristic icon">
+                                <div class="product__characteristics-info">
+                                    <span>Screen size</span><br>
+                                    <p>6.7"</p>
+                                </div>
+                            </div>
+                            <div class="product__characteristics-element">
+                                <img src="./img/product-info/cpu-icon.png" alt="Characteristic icon">
+                                <div class="product__characteristics-info">
+                                    <span>CPU</span><br>
+                                    <p>Apple A16 Bionic</p>
+                                </div>
+                            </div>
+                            <div class="product__characteristics-element">
+                                <img src="./img/product-info/number-of-cores-icon.png" alt="Characteristic icon">
+                                <div class="product__characteristics-info">
+                                    <span>Number of Cores</span><br>
+                                    <p>6</p>
+                                </div>
+                            </div>
+                            <div class="product__characteristics-element">
+                                <img src="./img/product-info/main-camera-icon.png" alt="Characteristic icon">
+                                <div class="product__characteristics-info">
+                                    <span>Main camera</span><br>
+                                    <p>48-12-12 MP</p>
+                                </div>
+                            </div>
+                            <div class="product__characteristics-element">
+                                <img src="./img/product-info/front-camera-icon.png" alt="Characteristic icon">
+                                <div class="product__characteristics-info">
+                                    <span>Front-camera</span><br>
+                                    <p>12MP</p>
+                                </div>
+                            </div>
+                            <div class="product__characteristics-element">
+                                <img src="./img/product-info/battery-icon.png" alt="Characteristic icon">
+                                <div class="product__characteristics-info">
+                                    <span>Battery capacity</span><br>
+                                    <p>4323 mAh</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product__text-block">
+                            <p class="product__info">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi 
+                                enim facere eos provident repellendus magnam doloremque quae architecto 
+                                non ex deleniti quisquam tenetur et dolor laudantium placeat optio, 
+                                culpa cupiditate soluta hic itaque dolore fuga rerum sapiente. Corrupti 
+                                magnam accusantium suscipit sit repellat voluptatum ipsum sequi cupiditate 
+                                quae quaerat temporibus incidunt, aliquid facere culpa ullam natus quisquam, 
+                                obcaecati nemo ducimus numquam, eum quis dolores? Recusandae dignissimos ea unde 
+                                magni assumenda, iste distinctio incidunt quaerat esse? Molestias dolorum perferendis accusamus quia.
+                            </p>
+                            <button class="product__info-toggle" id="toggleBtn">more...</button>
+                        </div>
+
+                        <div class="product__buttons">
+                            <button class="product__btn black-btn" aria-label="Add product to Wishlist" id="addWishlist">Add to Wishlist</button>
+                            <button class="product__btn black-btn" aria-label="Add to Card" id="addCard">Add to Card</button>
+                        </div>
+
+                        <div class="product__benefits">
+                            <div class="product__benefits-block">
+                                <img src="./img/product-info/Delivery-icon.png" alt="Delivery icon">
+                                <div class="product__benefits-info">
+                                    <span>Free Delivery</span>
+                                    <p>1-2 day</p>
+                                </div>
+                            </div>
+                            <div class="product__benefits-block">
+                                <img src="./img/product-info/Stock-icon.png" alt="Stock icon">
+                                <div class="product__benefits-info">
+                                    <span>In Stock</span>
+                                    <p>Today</p>
+                                </div>
+                            </div>
+                            <div class="product__benefits-block">
+                                <img src="./img/product-info/Guaranteed-icon.png" alt="Guaranteed icon">
+                                <div class="product__benefits-info">
+                                    <span>Guaranteed</span>
+                                    <p>1 year</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__top">
+                    <div class="footer__logo-text">
+                        <div class="footer__logo">
+                            <a href="#">
+                                <img src="./img/footer/logo.png" alt="Logo 'cyber'">
+                            </a>
+                        </div>
+                        <p class="footer-logo__text">
+                            We are a residential interior design firm located in Portland. 
+                            Our boutique-studio offers more than
+                        </p>
+                    </div>
+
+                    <nav class="footer__nav">
+                        <div class="footer__nav-column">
+                            <h4 class="footer__nav-title">Services</h4>
+                            <ul class="footer__nav-list">
+                                <li><a href="#">Bonus program</a></li>
+                                <li><a href="#">Gift cards</a></li>
+                                <li><a href="#">Credit and payment</a></li>
+                                <li><a href="#">Service contracts</a></li>
+                                <li><a href="#">Non-cash account</a></li>
+                                <li><a href="#">Payment</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer__nav-column">
+                            <h4 class="footer__nav-title">Assistance to the buyer</h4>
+                            <ul class="footer__nav-list">
+                                <li><a href="#">Find an order</a></li>
+                                <li><a href="#">Terms of delivery</a></li>
+                                <li><a href="#">Exchange and return of goods</a></li>
+                                <li><a href="#">Guarantee</a></li>
+                                <li><a href="#">Frequently asked questions</a></li>
+                                <li><a href="#">Terms of use of the site</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+
+                <div class="footer__bottom">
+                    <div class="footer__social">
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/product.js"></script>
+</body>
+</html>

@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber - Онлайн маркет для покупок в интернете</title>
+
+    <link rel="stylesheet" href="fonts/font-awesome/css/all.css" />
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="header__top">
+                    <a href="#" class="header__logo">
+                        <img src="./img/header/header-logo.png" alt="Logo 'cyber'">
+                    </a>
+
+                    <div class="header__search" role="search">
+                        <button class="header__search-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        <input type="search" placeholder="Search">
+                    </div>
+
+                    <nav class="header__nav">
+                        <a href="#" class="active">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Contact Us</a>
+                        <a href="#">Blog</a>
+                    </nav>
+
+                    <div class="header__actions">
+                        <button class="header-actions__wishlist" aria-label="Избранное">
+                            <img src="./img/header/wishlist-icon.svg" alt="Избранное">
+                        </button>
+
+                        <button class="header-actions__cart" aria-label="Корзина">
+                            <img src="./img/header/cart-icon.svg" alt="Корзина">
+                            <span id="cartNotification"></span>
+                        </button>
+
+                        <a href="#" aria-label="Профиль" class="header-actions__profile">
+                            <img src="./img/header/profile-icon.svg" alt="Профиль">
+                        </a>
+                    </div>
+
+                    <!-- Mobile  -->
+                    <div class="header__burger-menu">
+                        <button class="header-burger-menu__btn">
+                            <div class="header-burger-menu__line burger-line-1"></div>
+                            <div class="header-burger-menu__line burger-line-2"></div>
+                            <div class="header-burger-menu__line burger-line-3"></div>
+                        </button>
+                    </div>
+                    <!--  -->
+                </div>
+
+                <nav class="header__nav-categories">
+                    <button class="header-nav-categories__btn">
+                        <img src="./img/header/Phones.svg" alt="Категория: Телефоны">
+                        <span>Phones</span>                  
+                    </button>
+
+                    <div class="header-nav-categories__line"></div>
+
+                    <button class="header-nav-categories__btn">
+                        <img src="./img/header/Computers.svg" alt="Категория: Компьютеры">
+                        <span>Computers</span>
+                    </button>
+
+                    <div class="header-nav-categories__line"></div>
+
+                    <button class="header-nav-categories__btn">
+                        <img src="./img/header/Gaming.svg" alt="Категория: Консоли">
+                        <span>Smart Watches</span>
+                    </button>
+
+                    <div class="header-nav-categories__line"></div>
+
+                    <button class="header-nav-categories__btn">
+                        <img src="./img/header/Cameras.svg" alt="Категория: Камеры">
+                        <span>Cameras</span>                   
+                    </button>
+
+                    <div class="header-nav-categories__line"></div>
+
+                    <button class="header-nav-categories__btn">
+                        <img src="./img/header/Headphones.svg" alt="Категория: Наушники">
+                        <span>Headpones</span>
+                    </button>
+
+                    <div class="header-nav-categories__line"></div>
+
+                    <button class="header-nav-categories__btn">
+                        <img src="./img/header/Gaming.svg" alt="Категория: Игровое">
+                        <span>Gaming</span>                  
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section class="breadcrumbs">
+            <div class="container">
+                <nav class="breadcrumbs__nav">
+                    <a href="#">Home</a>
+                    <div class="breadcrumbs__arrow"></div>
+                    <a href="#">Catalog</a>
+                    <div class="breadcrumbs__arrow"></div>
+                    <a href="#" class="active">Smartphones</a>
+                </nav>
+            </div>
+        </section>
+
+        <section class="catalog">
+            <div class="container">
+                <div class="catalog__content">
+                    <div class="catalog__filters" id="filtersWindow">
+                        <div class="catalog__filters-title">
+                            <button class="catalog__filters-btn-mobile" id="closeFilters">
+                                <img src="./img/catalog/arrow-left.svg" alt="Arrow left: exit filters">
+                                Filters
+                            </button>
+                        </div>
+
+                        <div class="catalog-filters__dropdown active">
+                            <div class="catalog-filters__dropdown-btn">
+                                <p class="catalog-filters__dropdown-name">Price</p>
+                                <div class="catalog-filters__dropdown-arrow"></div>
+                            </div>
+
+                            <div class="catalog-filters__dropdown-content">
+                                <div class="catalog-filters__price">
+                                    <div class="catalog-filters__price-labels">
+                                        <span>From</span>
+                                        <span>To</span>
+                                    </div>
+
+                                    <div class="catalog-filters__price-inputs">
+                                        <input type="number" id="priceMin" min="0" max="10000" value="0">
+                                        <span class="catalog-filters__price-line"></span>
+                                        <input type="number" id="priceMax" min="0" max="10000" value="0">
+                                    </div>
+
+                                    <input 
+                                        type="range" 
+                                        id="price" 
+                                        class="catalog-filters__price-input-range" 
+                                        min="0" 
+                                        max="10000" 
+                                        step="1"
+                                        value="1299"
+                                    >
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="catalog-filters__dropdown active">
+                            <div class="catalog-filters__dropdown-btn">
+                                <p class="catalog-filters__dropdown-name">Brand</p>
+                                <div class="catalog-filters__dropdown-arrow"></div>
+                            </div>
+
+                            <div class="catalog-filters__dropdown-content">
+                                <div class="catalog-filters__options catalog-filters__brand custom-scrollbar ">
+                                    <div class="catalog-filters__search small-search" role="search">
+                                        <button class="catalog-filters__search-btn">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </button>
+                                        <input type="search" placeholder="Search">
+                                    </div>
+
+                                    <div class="catalog-filters__options-list">
+                                        <label class="catalog-filters__options-list-item custom-checkbox">
+                                            <input type="checkbox" class="original-checkbox" name="brand" value="apple">
+                                            <span class="checkbox-mark"></span>
+                                            Apple
+                                            <span class="count-products">110</span>
+                                        </label>
+                                        <label class="catalog-filters__options-list-item custom-checkbox">
+                                            <input type="checkbox" class="original-checkbox" name="brand" value="samsung">
+                                            <span class="checkbox-mark"></span>
+                                            Samsung
+                                            <span class="count-products">125</span>
+                                        </label>
+                                        <label class="catalog-filters__options-list-item custom-checkbox">
+                                            <input type="checkbox" class="original-checkbox" name="brand" value="xiaomi">
+                                            <span class="checkbox-mark"></span>
+                                            Xiaomi
+                                            <span class="count-products">68</span>
+                                        </label>
+                                        <label class="catalog-filters__options-list-item custom-checkbox">
+                                            <input type="checkbox" class="original-checkbox" name="brand" value="poco">
+                                            <span class="checkbox-mark"></span>
+                                            Poco
+                                            <span class="count-products">44</span>
+                                        </label>
+                                        <label class="catalog-filters__options-list-item custom-checkbox">
+                                            <input type="checkbox" class="original-checkbox" name="brand" value="oppo">
+                                            <span class="checkbox-mark"></span>
+                                            OPPO
+                                            <span class="count-products">36</span>
+                                        </label>
+                                        <label class="catalog-filters__options-list-item custom-checkbox">
+                                            <input type="checkbox" class="original-checkbox" name="brand" value="honor">
+                                            <span class="checkbox-mark"></span>
+                                            Honor
+                                            <span class="count-products">10</span>
+                                        </label>
+                                        <label class="catalog-filters__options-list-item custom-checkbox">
+                                            <input type="checkbox" class="original-checkbox" name="brand" value="motorola">
+                                            <span class="checkbox-mark"></span>
+                                            Motorola
+                                            <span class="count-products">34</span>
+                                        </label>
+                                        <label class="catalog-filters__options-list-item custom-checkbox">
+                                            <input type="checkbox" class="original-checkbox" name="brand" value="nokia">
+                                            <span class="checkbox-mark"></span>
+                                            Nokia
+                                            <span class="count-products">22</span>
+                                        </label>
+                                        <label class="catalog-filters__options-list-item custom-checkbox">
+                                            <input type="checkbox" class="original-checkbox" name="brand" value="realme">
+                                            <span class="checkbox-mark"></span>
+                                            Realme
+                                            <span class="count-products">35</span>
+                                        </label>
+                                        <label class="catalog-filters__options-list-item custom-checkbox">
+                                            <input type="checkbox" class="original-checkbox" name="brand" value="onePlus">
+                                            <span class="checkbox-mark"></span>
+                                            OnePlus
+                                            <span class="count-products">29</span>
+                                        </label>
+                                        <label class="catalog-filters__options-list-item custom-checkbox">
+                                            <input type="checkbox" class="original-checkbox" name="brand" value="vivo">
+                                            <span class="checkbox-mark"></span>
+                                            Vivo
+                                            <span class="count-products">9</span>
+                                        </label>
+                                        <label class="catalog-filters__options-list-item custom-checkbox">
+                                            <input type="checkbox" class="original-checkbox" name="brand" value="nothing">
+                                            <span class="checkbox-mark"></span>
+                                            Nothing
+                                            <span class="count-products">12</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="catalog-filters__dropdown">
+                            <div class="catalog-filters__dropdown-btn">
+                                <p class="catalog-filters__dropdown-name">Built-in memory</p>
+                                <div class="catalog-filters__dropdown-arrow"></div>
+                            </div>
+
+                            <div class="catalog-filters__dropdown-content">
+                                <div class="catalog-filters__options catalog-filters__memory custom-scrollbar">
+                                    <div class="catalog-filters__search small-search" role="search">
+                                        <button class="catalog-filters__search-btn">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </button>
+                                        <input type="search" placeholder="Search">
+                                    </div>
+
+                                    <div class="catalog-filters__memory-list catalog-filters__options-list">
+                                        <label class="catalog-filters__options-list-item custom-checkbox">
+                                            <input type="checkbox" class="original-checkbox" name="memory" value="16GB">
+                                            <span class="checkbox-mark"></span>
+                                            16GB
+                                            <span class="count-products">65</span>
+                                        </label>
+                                        <label class="catalog-filters__options-list-item custom-checkbox">
+                                            <input type="checkbox" class="original-checkbox" name="memory" value="32GB">
+                                            <span class="checkbox-mark"></span>
+                                            32GB
+                                            <span class="count-products">123</span>
+                                        </label>
+                                        <label class="catalog-filters__options-list-item custom-checkbox">
+                                            <input type="checkbox" class="original-checkbox" name="memory" value="64GB">
+                                            <span class="checkbox-mark"></span>
+                                            64GB
+                                            <span class="count-products">48</span>
+                                        </label>
+                                        <label class="catalog-filters__options-list-item custom-checkbox">
+                                            <input type="checkbox" class="original-checkbox" name="memory" value="128GB">
+                                            <span class="checkbox-mark"></span>
+                                            128GB
+                                            <span class="count-products">50</span>
+                                        </label>
+                                        <label class="catalog-filters__options-list-item custom-checkbox">
+                                            <input type="checkbox" class="original-checkbox" name="memory" value="256GB">
+                                            <span class="checkbox-mark"></span>
+                                            256GB
+                                            <span class="count-products">24</span>
+                                        </label>
+                                        <label class="catalog-filters__options-list-item custom-checkbox">
+                                            <input type="checkbox" class="original-checkbox" name="memory" value="512GB">
+                                            <span class="checkbox-mark"></span>
+                                            512GB
+                                            <span class="count-products">8</span>
+                                        </label>
+                                        <label class="catalog-filters__options-list-item custom-checkbox">
+                                            <input type="checkbox" class="original-checkbox" name="memory" value="1TB">
+                                            <span class="checkbox-mark"></span>
+                                            1TB
+                                            <span class="count-products">6</span>
+                                        </label>
+                                        <label class="catalog-filters__options-list-item custom-checkbox">
+                                            <input type="checkbox" class="original-checkbox" name="memory" value="2TB">
+                                            <span class="checkbox-mark"></span>
+                                            2TB
+                                            <span class="count-products">3</span>
+                                        </label>
+                                        <label class="catalog-filters__options-list-item custom-checkbox">
+                                            <input type="checkbox" class="original-checkbox" name="memory" value="24TB">
+                                            <span class="checkbox-mark"></span>
+                                            24TB
+                                            <span class="count-products">1</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="catalog-filters__dropdown">
+                            <div class="catalog-filters__dropdown-btn">
+                                <p class="catalog-filters__dropdown-name">Protection class</p>
+                                <div class="catalog-filters__dropdown-arrow"></div>
+                            </div>
+
+                            <div class="catalog-filters__dropdown-content">
+                                <div class="catalog-filters__class">
+                                    <!--  -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="catalog-filters__dropdown">
+                            <div class="catalog-filters__dropdown-btn">
+                                <p class="catalog-filters__dropdown-name">Screen diagonal</p>
+                                <div class="catalog-filters__dropdown-arrow"></div>
+                            </div>
+
+                            <div class="catalog-filters__dropdown-content">
+                                <div class="catalog-filters__screen-diagonal">
+                                    <!--  -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="catalog-filters__dropdown">
+                            <div class="catalog-filters__dropdown-btn">
+                                <p class="catalog-filters__dropdown-name">Screen type</p>
+                                <div class="catalog-filters__dropdown-arrow"></div>
+                            </div>
+
+                            <div class="catalog-filters__dropdown-content">
+                                <div class="catalog-filters__screen-type">
+                                    <!--  -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="catalog-filters__dropdown">
+                            <div class="catalog-filters__dropdown-btn">
+                                <p class="catalog-filters__dropdown-name">Battery capacity</p>
+                                <div class="catalog-filters__dropdown-arrow"></div>
+                            </div>
+
+                            <div class="catalog-filters__dropdown-content">
+                                <div class="catalog-filters__battery">
+                                    <!--  -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="catalog-filters__btn-apply black-btn" aria-label="Apply filters">
+                            Apply
+                        </button>
+                    </div>
+
+                    <div class="catalog__products active" id="productsWindow">
+                        <div class="catalog-products__top">
+                            <div class="catalog-products__top-selected">
+                                Selected Products: <span id="selectedProducts">0</span>
+                            </div>
+
+                            <div class="catalog-products__top-filters">
+                                <div class="catalog-products-top__filters-mobile">
+                                    <button class="catalog-products-top__filters-btn" aria-label="Open filters" id="openFilters">
+                                        Filters
+                                        <img src="./img/catalog/filters-icon.svg" alt="Button filters">
+                                    </button>
+                                </div>
+
+                                <div class="catalog-products__top-filter-option select-custom">
+                                    <select id="filterOrder" name="filter">
+                                        <option value="rating" selected>By rating</option>
+                                        <option value="price">By price</option>
+                                        <option value="memory">By memory</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="catalog-products__bottom">
+                            <div class="catalog-products__cards" id="productsContainer">
+                                <!-- Генерация через JS -->
+                            </div>
+
+                            <div class="catalog-products__cards-pagination">
+                                <button class="catalog-products-cards-pagination__prev" aria-label="Previous page" data-pagination="prev">
+                                    <img src="./img/catalog/arrow-left.svg" alt="Previous page">
+                                </button>
+
+                                <div class="catalog-products-cards-pagination__buttons">
+                                    <button class="catalog-products-cards-pagination__btn active" aria-label="Go to a new product page" type="button">1</button>
+                                    <button class="catalog-products-cards-pagination__btn" aria-label="Go to a new product page" type="button">2</button>
+                                    <button class="catalog-products-cards-pagination__btn" aria-label="Go to a new product page" type="button">3</button>
+                                    <button class="catalog-products-cards-pagination__btn" aria-label="Go to a new product page" type="button">4</button>
+                                </div>
+
+                                <button class="catalog-products-cards-pagination__next" aria-label="Next page" data-pagination="next">
+                                    <img src="./img/catalog/arrow-left.svg" alt="Next page">
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__top">
+                    <div class="footer__logo-text">
+                        <div class="footer__logo">
+                            <a href="#">
+                                <img src="./img/footer/logo.png" alt="Logo 'cyber'">
+                            </a>
+                        </div>
+                        <p class="footer-logo__text">
+                            We are a residential interior design firm located in Portland. 
+                            Our boutique-studio offers more than
+                        </p>
+                    </div>
+
+                    <nav class="footer__nav">
+                        <div class="footer__nav-column">
+                            <h4 class="footer__nav-title">Services</h4>
+                            <ul class="footer__nav-list">
+                                <li><a href="#">Bonus program</a></li>
+                                <li><a href="#">Gift cards</a></li>
+                                <li><a href="#">Credit and payment</a></li>
+                                <li><a href="#">Service contracts</a></li>
+                                <li><a href="#">Non-cash account</a></li>
+                                <li><a href="#">Payment</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer__nav-column">
+                            <h4 class="footer__nav-title">Assistance to the buyer</h4>
+                            <ul class="footer__nav-list">
+                                <li><a href="#">Find an order</a></li>
+                                <li><a href="#">Terms of delivery</a></li>
+                                <li><a href="#">Exchange and return of goods</a></li>
+                                <li><a href="#">Guarantee</a></li>
+                                <li><a href="#">Frequently asked questions</a></li>
+                                <li><a href="#">Terms of use of the site</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+
+                <div class="footer__bottom">
+                    <div class="footer__social">
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/main.js" defer></script>
+</body>
+</html>
