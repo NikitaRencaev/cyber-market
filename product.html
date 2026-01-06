@@ -13,7 +13,7 @@
     <header class="header">
         <div class="container">
             <div class="header__content">
-                <div class="header__top">
+                <div class="header__top header__desktop">
                     <a href="./index.html" class="header__logo">
                         <img src="./img/header/header-logo.png" alt="Logo 'cyber'">
                     </a>
@@ -33,29 +33,65 @@
                     </nav>
 
                     <div class="header__actions">
-                        <button class="header-actions__wishlist" aria-label="Избранное">
+                        <a class="header-actions__wishlist" aria-label="Избранное">
                             <img src="./img/header/wishlist-icon.svg" alt="Избранное">
-                        </button>
+                        </a>
 
-                        <button class="header-actions__cart" aria-label="Корзина">
+                        <a class="header-actions__cart" href="./shopping-cart.html" aria-label="Корзина">
                             <img src="./img/header/cart-icon.svg" alt="Корзина">
                             <span id="cartNotification"></span>
-                        </button>
+                        </a>
 
                         <a href="#" aria-label="Профиль" class="header-actions__profile">
                             <img src="./img/header/profile-icon.svg" alt="Профиль">
                         </a>
                     </div>
+                </div>
 
-                    <!-- Mobile  -->
+                <!-- Mobile header content -->
+                <div class="header__mobile">
+                    <a href="#" class="header__logo">
+                        <img src="./img/header/header-logo.png" alt="Logo 'cyber'">
+                    </a>
+
+                    <div class="header-mobile__content" id="burgerMenuContent">
+                        <div class="header__search header-mobile__search" role="search">
+                            <button class="header__search-btn">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                            <input type="search" placeholder="Search">
+                        </div>
+
+                        <div class="header__actions header-mobile__actions">
+                            <a class="header-actions__wishlist" aria-label="Избранное">
+                                <img src="./img/header/wishlist-icon.svg" alt="Избранное">
+                            </a>
+
+                            <a class="header-actions__cart" href="./shopping-cart.html" aria-label="Корзина">
+                                <img src="./img/header/cart-icon.svg" alt="Корзина">
+                                <span id="cartNotification"></span>
+                            </a>
+
+                            <a href="#" aria-label="Профиль" class="header-actions__profile">
+                                <img src="./img/header/profile-icon.svg" alt="Профиль">
+                            </a>
+                        </div>
+
+                        <nav class="header__nav header-mobile__nav">
+                            <a href="#" class="active">Home</a>
+                            <a href="#">About</a>
+                            <a href="#">Contact Us</a>
+                            <a href="#">Blog</a>
+                        </nav>
+                    </div>
+
                     <div class="header__burger-menu">
-                        <button class="header-burger-menu__btn">
+                        <button class="header-burger-menu__btn" id="burgerMenuButton">
                             <div class="header-burger-menu__line burger-line-1"></div>
                             <div class="header-burger-menu__line burger-line-2"></div>
                             <div class="header-burger-menu__line burger-line-3"></div>
                         </button>
                     </div>
-                    <!--  -->
                 </div>
 
                 <nav class="header__nav-categories">
@@ -115,7 +151,7 @@
                     <div class="breadcrumbs__arrow"></div>
                     <a href="#">Apple</a>
                     <div class="breadcrumbs__arrow"></div>
-                    <a href="#" class="active">iPhone 14 Pro Max</a>
+                    <a href="#" class="active" id="breadcrumbsName">iPhone 14 Pro Max</a>
                 </nav>
             </div>
         </section>
@@ -124,20 +160,20 @@
             <div class="container">
                 <div class="product__content">
                     <div class="product__photos">
-                        <div class="product__swith-img">
-                            <img src="./img/catalog/products/iphone/Iphone 14 Pro Max/Iphone 14 pro 128gb deep-purple.png" class="active" alt="Show phone">
+                        <div class="product__swith-img" id="productSwitchPhotos">
+                            <!-- <img src="./img/catalog/products/iphone/Iphone 14 Pro Max/Iphone 14 pro 128gb deep-purple.png" class="active" alt="Show phone">
                             <img src="./img/catalog/products/iphone/Iphone 14 Pro Max/Iphone 14 pro 128gb deep-purple front.png" alt="Show phone front">
                             <img src="./img/catalog/products/iphone/Iphone 14 Pro Max/Iphone 14 pro 128gb deep-purple behind.png" alt="Show phone behind">
-                            <img src="./img/catalog/products/iphone/Iphone 14 Pro Max/Iphone 14 pro 128gb deep-purple askance.png" alt="Show phone askance">
+                            <img src="./img/catalog/products/iphone/Iphone 14 Pro Max/Iphone 14 pro 128gb deep-purple askance.png" alt="Show phone askance"> -->
                         </div>
 
-                        <div class="product__current-img">
-                            <img src="./img/catalog/products/iphone/Iphone 14 Pro Max/Iphone 14 pro 128gb deep-purple big.png" alt="Show the phone in a large picture">
+                        <div class="product__current-img" id="productCurrentPhoto">
+                            <!-- <img src="./img/catalog/products/iphone/Iphone 14 Pro Max/Iphone 14 pro 128gb deep-purple big.png" alt="Show the phone in a large picture"> -->
                         </div>
                     </div>
 
                     <div class="product__info-block">
-                        <h1 class="product__name">
+                        <h1 class="product__name" id="productName">
                             Apple iPhone 14 Pro Max
                         </h1>
 
@@ -152,20 +188,21 @@
                         <div class="product__color-block">
                             <p>Select color:</p>
 
-                            <div class="product__colors-btns">
-                                <button class="product__color-btn" value="black" name="color"></button>
-                                <button class="product__color-btn" value="purple" name="color"></button>
-                                <button class="product__color-btn" value="red" name="color"></button>
-                                <button class="product__color-btn" value="yellow" name="color"></button>
+                            <div class="product__colors-btns" id="colorBtns">
+                                <button class="product__color-btn" value="space-black" name="color"></button>
+                                <button class="product__color-btn" value="deep-purple" name="color"></button>
+                                <button class="product__color-btn" value="pink" name="color"></button>
+                                <button class="product__color-btn" value="gold" name="color"></button>
                                 <button class="product__color-btn" value="white" name="color"></button>
+                                <button class="product__color-btn" value="silver" name="color"></button>
                             </div>
                         </div>
 
-                        <div class="product__memory">
+                        <div class="product__memory" id="productMemory">
                             <button class="product__memory-btn noactive" name="memory" value="128GB">128GB</button>
                             <button class="product__memory-btn" name="memory" value="256GB">256GB</button>
                             <button class="product__memory-btn" name="memory" value="512GB">512GB</button>
-                            <button class="product__memory-btn active" name="memory" value="1TB">1TB</button>
+                            <button class="product__memory-btn" name="memory" value="1TB">1TB</button>
                         </div>
 
                         <div class="product__characteristics-grid">
@@ -173,63 +210,63 @@
                                 <img src="./img/product-info/screen-size.png" alt="Characteristic icon">
                                 <div class="product__characteristics-info">
                                     <span>Screen size</span><br>
-                                    <p>6.7"</p>
+                                    <p id="blockScreenSize">6.7"</p>
                                 </div>
                             </div>
                             <div class="product__characteristics-element">
                                 <img src="./img/product-info/cpu-icon.png" alt="Characteristic icon">
                                 <div class="product__characteristics-info">
                                     <span>CPU</span><br>
-                                    <p>Apple A16 Bionic</p>
+                                    <p id="blockCPU">Apple A16 Bionic</p>
                                 </div>
                             </div>
                             <div class="product__characteristics-element">
                                 <img src="./img/product-info/number-of-cores-icon.png" alt="Characteristic icon">
                                 <div class="product__characteristics-info">
                                     <span>Number of Cores</span><br>
-                                    <p>6</p>
+                                    <p id="blockCPUCores">6</p>
                                 </div>
                             </div>
                             <div class="product__characteristics-element">
                                 <img src="./img/product-info/main-camera-icon.png" alt="Characteristic icon">
                                 <div class="product__characteristics-info">
                                     <span>Main camera</span><br>
-                                    <p>48-12-12 MP</p>
+                                    <p id="blockMainCamera">48-12-12 MP</p>
                                 </div>
                             </div>
                             <div class="product__characteristics-element">
                                 <img src="./img/product-info/front-camera-icon.png" alt="Characteristic icon">
                                 <div class="product__characteristics-info">
                                     <span>Front-camera</span><br>
-                                    <p>12MP</p>
+                                    <p id="blockFrontCamera">12MP</p>
                                 </div>
                             </div>
                             <div class="product__characteristics-element">
                                 <img src="./img/product-info/battery-icon.png" alt="Characteristic icon">
                                 <div class="product__characteristics-info">
                                     <span>Battery capacity</span><br>
-                                    <p>4323 mAh</p>
+                                    <p id="blockBatteryCapacity">4323 mAh</p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="product__text-block">
-                            <p class="product__info">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi 
-                                enim facere eos provident repellendus magnam doloremque quae architecto 
-                                non ex deleniti quisquam tenetur et dolor laudantium placeat optio, 
-                                culpa cupiditate soluta hic itaque dolore fuga rerum sapiente. Corrupti 
-                                magnam accusantium suscipit sit repellat voluptatum ipsum sequi cupiditate 
-                                quae quaerat temporibus incidunt, aliquid facere culpa ullam natus quisquam, 
-                                obcaecati nemo ducimus numquam, eum quis dolores? Recusandae dignissimos ea unde 
-                                magni assumenda, iste distinctio incidunt quaerat esse? Molestias dolorum perferendis accusamus quia.
+                            <p class="product__info" id="infoProduct">
+                                The iPhone 14 Pro Max redefines premium smartphones with its stunning 
+                                6.7-inch Super Retina XDR display featuring Always-On technology and 
+                                Dynamic Island. Powered by the blazing-fast A16 Bionic chip, it delivers 
+                                exceptional performance and efficiency. The advanced triple-camera system 
+                                with 48MP main sensor captures incredible detail in any light, while the 
+                                new Photonic Engine enhances low-light photography. With all-day battery 
+                                life, Crash Detection, and Emergency SOS via satellite, it combines 
+                                cutting-edge innovation with unmatched reliability and style.
                             </p>
                             <button class="product__info-toggle" id="toggleBtn">more...</button>
                         </div>
 
                         <div class="product__buttons">
                             <button class="product__btn black-btn" aria-label="Add product to Wishlist" id="addWishlist">Add to Wishlist</button>
-                            <button class="product__btn black-btn" aria-label="Add to Card" id="addCard">Add to Card</button>
+                            <button class="product__btn black-btn" aria-label="Add to Card" id="addCard">Add to Cart</button>
                         </div>
 
                         <div class="product__benefits">
@@ -253,6 +290,416 @@
                                     <span>Guaranteed</span>
                                     <p>1 year</p>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="details">
+            <div class="container">
+                <div class="details__content">
+                    <h2 class="details__title">
+                        Details
+                    </h2>
+
+                    <p class="details__info" id="detailsInfo">
+                        Just as a book is judged by its cover, the first thing you notice 
+                        when you pick up a modern smartphone is the display. Nothing surprising, 
+                        because advanced technologies allow you to practically level the display 
+                        frames and cutouts for the front camera and speaker, leaving no room for 
+                        bold design solutions. And how good that in such realities Apple everything 
+                        is fine with displays. Both critics and mass consumers always praise the 
+                        quality of the picture provided by the products of the Californian brand. 
+                        And last year's 6.7-inch Retina panels, which had ProMotion, caused real 
+                        admiration for many.
+                    </p>
+
+                    <div class="details__screen">
+                        <h3 class="details__screen-title details__subtitle">
+                            Screen
+                        </h3>
+
+                        <div class="details__screen-options details__options">
+                            <div class="details__screen-option details__option">
+                                <p class="details__screen-option-name details__option-name">Screen diagonal</p>
+                                <span class="details__screen-option-value details__option-value" id="screenSize">6.7"</span>
+                            </div>
+                            <div class="details__screen-option details__option">
+                                <p class="details__screen-option-name details__option-name">The screen resolution</p>
+                                <span class="details__screen-option-value details__option-value" id="screenResolution">2796x1290</span>
+                            </div>
+                            <div class="details__screen-option details__option">
+                                <p class="details__screen-option-name details__option-name">The screen refresh rate</p>
+                                <span class="details__screen-option-value details__option-value" id="screenRefreshRate">120 Hz</span>
+                            </div>
+                            <div class="details__screen-option details__option">
+                                <p class="details__screen-option-name details__option-name">The pixel density</p>
+                                <span class="details__screen-option-value details__option-value" id="screenPixelDensity">460 ppi</span>
+                            </div>
+                            <div class="details__screen-option details__option">
+                                <p class="details__screen-option-name details__option-name">Screen type</p>
+                                <span class="details__screen-option-value details__option-value" id="screenType">OLED</span>
+                            </div>
+                            <div class="details__screen-option details__option">
+                                <p class="details__screen-option-name details__option-name">Additionally</p>
+                                <span class="details__screen-option-value details__option-value" id="screenAdditionally">Dynamic Island<br>Always-On display<br>HDR display<br>True Tone<br>Wide color (P3)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="details__cpu">
+                        <h3 class="details__cpu-title details__subtitle">CPU</h3>
+
+                        <div class="details__cpu-options details__options">
+                            <div class="details__screen-option details__option">
+                                <p class="details__screen-option-name details__option-name">CPU</p>
+                                <span class="details__screen-option-value details__option-value" id="CPU">A16 Bionic</span>
+                            </div>
+                            <div class="details__screen-option details__option">
+                                <p class="details__screen-option-name details__option-name">Number of cores</p>
+                                <span class="details__screen-option-value details__option-value" id="CPUCores">6</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="details__button view-button" aria-label="More options">
+                        View more
+                        <img src="./img/details/Arrow Down.svg" alt="arrow down">
+                    </button>
+                </div>
+            </div> 
+        </section>
+
+        <section class="reviews">
+            <div class="container">
+                <div class="reviews__top">
+                    <h2 class="reviews__title">
+                        Reviews
+                    </h2>
+
+                    <div class="reviews__overall-rating">
+                        <div class="reviews__overall-block">
+                            <div class="reviews__overall-info">
+                                <h3 class="reviews__overall-title">4.8</h3>
+                                <p class="reviews__number-rating">
+                                    of <span id="numberOfReviews">125</span> reviews
+                                </p>
+                            </div>
+                            <div class="reviews__stars">
+                                <div class="reviews__stars-empty">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="reviews__stars-fill" style="--rating: 4.8;">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews__schedule">
+                            <div class="reviews__schedule-option">
+                                <p class="reviews__schedule-option-name">Excellent</p>
+                                <div class="reviews__schedule-rating-bar">
+                                    <div class="reviews__schedule-rating-bar-fill" style="--fill: 95%"></div>
+                                </div>
+                                <span class="reviews__schedule-option-value">100</span>
+                            </div>
+                            <div class="reviews__schedule-option">
+                                <p class="reviews__schedule-option-name">Good</p>
+                                <div class="reviews__schedule-rating-bar">
+                                    <div class="reviews__schedule-rating-bar-fill" style="--fill: 60%"></div>
+                                </div>
+                                <span class="reviews__schedule-option-value">11</span>
+                            </div>
+                            <div class="reviews__schedule-option">
+                                <p class="reviews__schedule-option-name">Average</p>
+                                <div class="reviews__schedule-rating-bar">
+                                    <div class="reviews__schedule-rating-bar-fill" style="--fill: 50%"></div>
+                                </div>
+                                <span class="reviews__schedule-option-value">3</span>
+                            </div>
+                            <div class="reviews__schedule-option">
+                                <p class="reviews__schedule-option-name">Below Average</p>
+                                <div class="reviews__schedule-rating-bar">
+                                    <div class="reviews__schedule-rating-bar-fill" style="--fill: 55%"></div>
+                                </div>
+                                <span class="reviews__schedule-option-value">8</span>
+                            </div>
+                            <div class="reviews__schedule-option">
+                                <p class="reviews__schedule-option-name">Poor</p>
+                                <div class="reviews__schedule-rating-bar">
+                                    <div class="reviews__schedule-rating-bar-fill" style="--fill: 53%"></div>
+                                </div>
+                                <span class="reviews__schedule-option-value">1</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form action="/" class="reviews__form">
+                        <input type="text" placeholder="Leave Comment" class="reviews__comment-input">
+                    </form>
+                </div>
+
+                <div class="reviews__bottom">
+                    <div class="reviews__comment">
+                        <img src="./img/reviews/user-avatar-1.png" alt="User Avatar" class="reviews__comment-avatar">
+
+                        <div class="reviews__comment-content">
+                            <div class="reviews__comment-top">
+                                <h4 class="reviews__comment-username">Grace Carey</h4>
+                                <span class="reviews__comment-data">24 January, 2023</span>
+                            </div>
+                            <div class="reviews__comment-stars reviews__stars">
+                                <div class="reviews__stars-empty">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="reviews__stars-fill" style="--rating: 4;">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="reviews__comment-message">
+                                I was a bit nervous to be buying a secondhand phone from Amazon, 
+                                but I couldn’t be happier with my purchase!! I have a pre-paid data 
+                                plan so I was worried that this phone wouldn’t connect with my data 
+                                plan, since the new phones don’t have the physical Sim tray anymore, 
+                                but couldn’t have been easier! I bought an Unlocked black iPhone 14 
+                                Pro Max in excellent condition and everything is PERFECT. It was super 
+                                easy to set up and the phone works and looks great. It truly was in 
+                                excellent condition. Highly recommend!!!🖤
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reviews__comment">
+                        <img src="./img/reviews/user-avatar-2.png" alt="User Avatar" class="reviews__comment-avatar">
+
+                        <div class="reviews__comment-content">
+                            <div class="reviews__comment-top">
+                                <h4 class="reviews__comment-username">Ronald Richards</h4>
+                                <span class="reviews__comment-data">24 January, 2023</span>
+                            </div>
+                            <div class="reviews__comment-stars reviews__stars">
+                                <div class="reviews__stars-empty">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="reviews__stars-fill" style="--rating: 5;">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="reviews__comment-message">
+                                This phone has 1T storage and is durable. Plus all the new iPhones 
+                                have a C port! Apple is phasing out the current ones! (All about the 
+                                Benjamin’s) So if you want a phone that’s going to last grab an iPhone 
+                                14 pro max and get several cords and plugs.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reviews__comment">
+                        <img src="./img/reviews/user-avatar-3.png" alt="User Avatar" class="reviews__comment-avatar">
+
+                        <div class="reviews__comment-content">
+                            <div class="reviews__comment-top">
+                                <h4 class="reviews__comment-username">Darcy King</h4>
+                                <span class="reviews__comment-data">24 January, 2023</span>
+                            </div>
+                            <div class="reviews__comment-stars reviews__stars">
+                                <div class="reviews__stars-empty">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="reviews__stars-fill" style="--rating: 4;">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="reviews__comment-message">
+                                I might be the only one to say this but the camera is a little funky. 
+                                Hoping it will change with a software update: otherwise, love this phone! 
+                                Came in great condition
+                            </div>
+                            <div class="reviews__comment-photos">
+                                <div class="reviews__comment-photo">
+                                    <img src="./img/reviews/comment-photo-1.png" alt="Product photo from user">
+                                </div>
+                                <div class="reviews__comment-photo">
+                                    <img src="./img/reviews/comment-photo-2.png" alt="Product photo from user">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reviews__comment">
+                        <img src="./img/reviews/user-avatar-4.png" alt="User Avatar" class="reviews__comment-avatar">
+
+                        <div class="reviews__comment-content">
+                            <div class="reviews__comment-top">
+                                <h4 class="reviews__comment-username">John</h4>
+                                <span class="reviews__comment-data">24 January, 2023</span>
+                            </div>
+                            <div class="reviews__comment-stars reviews__stars">
+                                <div class="reviews__stars-empty">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="reviews__stars-fill" style="--rating: 4;">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="reviews__comment-message">
+                                In Washington, it is already difficult to surprise with the opening 
+                                of a new institution, but it is still possible. Especially if it is a 
+                                True Cost project. Here you pay an entrance fee and get meals at cost 
+                                price. 
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="reviews__bottom-btn view-button" aria-label="More options">
+                        View more
+                        <img src="./img/details/Arrow Down.svg" alt="arrow down">
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="related-products">
+            <div class="container">
+                <div class="related-products__content">
+                    <h2 class="related-products__title">
+                        Related Products
+                    </h2>
+                    <div class="related-products__cards">
+                        <div class="catalog-products__card">
+                            <div class="catalog-products-card__favorite">
+                                <button class="catalog-products-card__favorite-btn" aria-label="Add to favorite" type="button">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                            </div>
+
+                            <div class="catalog-products-card__photo">
+                                <img src="img/catalog/products/iphone/Iphone-14-Pro/iPhone-14-pro-gold/iphone-14-pro-gold.png" alt="Apple iPhone 14 Pro 512GB Gold">
+                            </div>
+
+                            <p class="catalog-products-card__info">
+                                Apple iPhone 14 Pro Gold (MQ233)
+                            </p>
+
+                            <span class="catalog-products-card__price">$1437</span>
+
+                            <div class="catalog-products-card__btn">
+                                <button class="black-btn" type="button">
+                                    Buy Now
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="catalog-products__card">
+                            <div class="catalog-products-card__favorite">
+                                <button class="catalog-products-card__favorite-btn" aria-label="Add to favorite" type="button">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                            </div>
+
+                            <div class="catalog-products-card__photo">
+                                <img src="img/catalog/products/airPods/AirPods-Max-Silver.png" alt="AirPods Max Silver">
+                            </div>
+
+                            <p class="catalog-products-card__info">
+                                AirPods Max Silver
+                            </p>
+
+                            <span class="catalog-products-card__price">$549</span>
+
+                            <div class="catalog-products-card__btn">
+                                <button class="black-btn" type="button">
+                                    Buy Now
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="catalog-products__card">
+                            <div class="catalog-products-card__favorite">
+                                <button class="catalog-products-card__favorite-btn" aria-label="Add to favorite" type="button">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                            </div>
+
+                            <div class="catalog-products-card__photo">
+                                <img src="img/catalog/products/Apple-Watch/Apple Watch-Series-9-GPS-41mm-Starlight-Aluminium-Case.png" alt="Apple Watch Series 9 GPS 41mm Starlight Aluminium Case">
+                            </div>
+
+                            <p class="catalog-products-card__info">
+                                Apple Watch Series 9 GPS 41mm Starlight Aluminium Case
+                            </p>
+
+                            <span class="catalog-products-card__price">$399</span>
+
+                            <div class="catalog-products-card__btn">
+                                <button class="black-btn" type="button">
+                                    Buy Now
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="catalog-products__card">
+                            <div class="catalog-products-card__favorite">
+                                <button class="catalog-products-card__favorite-btn" aria-label="Add to favorite" type="button">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                            </div>
+
+                            <div class="catalog-products-card__photo">
+                                <img src="img/catalog/products/iphone/Iphone-13-mini/iphone-13-mini-pink.png" alt="${product.brand} ${product.name} ${product.memory} ${product.color}">
+                            </div>
+
+                            <p class="catalog-products-card__info">
+                                Apple iPhone 13 mini Pink (MLK23)
+                            </p>
+
+                            <span class="catalog-products-card__price">$1437</span>
+
+                            <div class="catalog-products-card__btn">
+                                <button class="black-btn" type="button">
+                                    Buy Now
+                                </button>
                             </div>
                         </div>
                     </div>

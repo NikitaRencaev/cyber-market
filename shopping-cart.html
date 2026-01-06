@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber - Онлайн маркет для покупок в интернете</title>
+
+    <link rel="icon" href="./img/favicon.icon.ico">
+    <link rel="stylesheet" href="fonts/font-awesome/css/all.css" />
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="header__top header__desktop">
+                    <a href="./index.html" class="header__logo">
+                        <img src="./img/header/header-logo.png" alt="Logo 'cyber'">
+                    </a>
+
+                    <div class="header__search" role="search">
+                        <button class="header__search-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        <input type="search" placeholder="Search">
+                    </div>
+
+                    <nav class="header__nav">
+                        <a href="#" class="active">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Contact Us</a>
+                        <a href="#">Blog</a>
+                    </nav>
+
+                    <div class="header__actions">
+                        <a class="header-actions__wishlist" aria-label="Избранное">
+                            <img src="./img/header/wishlist-icon.svg" alt="Избранное">
+                        </a>
+
+                        <a class="header-actions__cart" href="./shopping-cart.html" aria-label="Корзина">
+                            <img src="./img/header/cart-icon.svg" alt="Корзина">
+                            <span id="cartNotification"></span>
+                        </a>
+
+                        <a href="#" aria-label="Профиль" class="header-actions__profile">
+                            <img src="./img/header/profile-icon.svg" alt="Профиль">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Mobile header content -->
+                <div class="header__mobile">
+                    <a href="#" class="header__logo">
+                        <img src="./img/header/header-logo.png" alt="Logo 'cyber'">
+                    </a>
+
+                    <div class="header-mobile__content" id="burgerMenuContent">
+                        <div class="header__search header-mobile__search" role="search">
+                            <button class="header__search-btn">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                            <input type="search" placeholder="Search">
+                        </div>
+
+                        <div class="header__actions header-mobile__actions">
+                            <a class="header-actions__wishlist" aria-label="Избранное">
+                                <img src="./img/header/wishlist-icon.svg" alt="Избранное">
+                            </a>
+
+                            <a class="header-actions__cart" href="./shopping-cart.html" aria-label="Корзина">
+                                <img src="./img/header/cart-icon.svg" alt="Корзина">
+                                <span id="cartNotification"></span>
+                            </a>
+
+                            <a href="#" aria-label="Профиль" class="header-actions__profile">
+                                <img src="./img/header/profile-icon.svg" alt="Профиль">
+                            </a>
+                        </div>
+
+                        <nav class="header__nav header-mobile__nav">
+                            <a href="#" class="active">Home</a>
+                            <a href="#">About</a>
+                            <a href="#">Contact Us</a>
+                            <a href="#">Blog</a>
+                        </nav>
+                    </div>
+
+                    <div class="header__burger-menu">
+                        <button class="header-burger-menu__btn" id="burgerMenuButton">
+                            <div class="header-burger-menu__line burger-line-1"></div>
+                            <div class="header-burger-menu__line burger-line-2"></div>
+                            <div class="header-burger-menu__line burger-line-3"></div>
+                        </button>
+                    </div>
+                </div>
+
+                <nav class="header__nav-categories">
+                    <button class="header-nav-categories__btn">
+                        <img src="./img/header/Phones.svg" alt="Категория: Телефоны">
+                        <span>Phones</span>                  
+                    </button>
+
+                    <div class="header-nav-categories__line"></div>
+
+                    <button class="header-nav-categories__btn">
+                        <img src="./img/header/Computers.svg" alt="Категория: Компьютеры">
+                        <span>Computers</span>
+                    </button>
+
+                    <div class="header-nav-categories__line"></div>
+
+                    <button class="header-nav-categories__btn">
+                        <img src="./img/header/Gaming.svg" alt="Категория: Консоли">
+                        <span>Smart Watches</span>
+                    </button>
+
+                    <div class="header-nav-categories__line"></div>
+
+                    <button class="header-nav-categories__btn">
+                        <img src="./img/header/Cameras.svg" alt="Категория: Камеры">
+                        <span>Cameras</span>                   
+                    </button>
+
+                    <div class="header-nav-categories__line"></div>
+
+                    <button class="header-nav-categories__btn">
+                        <img src="./img/header/Headphones.svg" alt="Категория: Наушники">
+                        <span>Headpones</span>
+                    </button>
+
+                    <div class="header-nav-categories__line"></div>
+
+                    <button class="header-nav-categories__btn">
+                        <img src="./img/header/Gaming.svg" alt="Категория: Игровое">
+                        <span>Gaming</span>                  
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="main">
+            <div class="container">
+                <div class="main__content">
+                    <div class="shopping-cart">
+                        <h1 class="shopping-cart__title">Shopping Cart</h1>
+
+                        <div class="shopping-cart__products-list custom-scrollbar" id="selectedProductsList">
+                            <div class="shopping-cart__product">
+                                <img src="./img/catalog/products/iphone/Iphone-14-ProMax/iPhone-14-proMax-deepPurple/iphone-14-proMax-deepPurple.png" alt="Product photo" class="shopping-cart__product-img">
+
+                                <div class="shopping-cart__product-content">
+                                    <div class="shopping-cart__product-info">
+                                        <h3 class="shopping-cart__product-name">
+                                            Apple iPhone 14 Pro Max 128Gb Deep Purple
+                                        </h3>
+                                        <p class="shopping-cart__product-id">
+                                            #2
+                                        </p>
+                                    </div>
+                                    <div class="shopping-cart__product-right">
+                                        <div class="shopping-cart__product-counter">
+                                            <button class="shopping-cart__product-counter-back">
+                                                <img src="./img/shopping-cart/back-counter-icon.svg" alt="back counter">
+                                            </button>
+                                            <input type="text" class="shopping-cart__product-counter-value" value="1" disabled>
+                                            <button class="shopping-cart__product-counter-forward">
+                                                <img src="./img/shopping-cart/forward-counter-icon.svg" alt="forward counter">
+                                            </button>
+                                        </div>
+
+                                        <span class="shopping-cart__product-price">$1399</span>
+
+                                        <button class="shopping-cart__product-delete" id="deleteProduct">
+                                            <img src="./img/shopping-cart/delete-product-icon.svg" alt="delete product">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="shopping-cart__product">
+                                <img src="./img/catalog/products/iphone/Iphone-14-ProMax/iPhone-14-proMax-deepPurple/iphone-14-proMax-deepPurple.png" alt="Product photo" class="shopping-cart__product-img">
+
+                                <div class="shopping-cart__product-content">
+                                    <div class="shopping-cart__product-info">
+                                        <h3 class="shopping-cart__product-name">
+                                            Apple iPhone 14 Pro Max 128Gb Deep Purple
+                                        </h3>
+                                        <p class="shopping-cart__product-id">
+                                            #2
+                                        </p>
+                                    </div>
+                                    <div class="shopping-cart__product-right">
+                                        <div class="shopping-cart__product-counter">
+                                            <button class="shopping-cart__product-counter-back">
+                                                <img src="./img/shopping-cart/back-counter-icon.svg" alt="back counter">
+                                            </button>
+                                            <input type="text" class="shopping-cart__product-counter-value" value="1" disabled>
+                                            <button class="shopping-cart__product-counter-forward">
+                                                <img src="./img/shopping-cart/forward-counter-icon.svg" alt="forward counter">
+                                            </button>
+                                        </div>
+
+                                        <span class="shopping-cart__product-price">$1399</span>
+
+                                        <button class="shopping-cart__product-delete">
+                                            <img src="./img/shopping-cart/delete-product-icon.svg" alt="delete product">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="shopping-cart__product">
+                                <img src="./img/catalog/products/iphone/Iphone-14-ProMax/iPhone-14-proMax-deepPurple/iphone-14-proMax-deepPurple.png" alt="Product photo" class="shopping-cart__product-img">
+
+                                <div class="shopping-cart__product-content">
+                                    <div class="shopping-cart__product-info">
+                                        <h3 class="shopping-cart__product-name">
+                                            Apple iPhone 14 Pro Max 128Gb Deep Purple
+                                        </h3>
+                                        <p class="shopping-cart__product-id">
+                                            #2
+                                        </p>
+                                    </div>
+                                    <div class="shopping-cart__product-right">
+                                        <div class="shopping-cart__product-counter">
+                                            <button class="shopping-cart__product-counter-back">
+                                                <img src="./img/shopping-cart/back-counter-icon.svg" alt="back counter">
+                                            </button>
+                                            <input type="text" class="shopping-cart__product-counter-value" value="1" disabled>
+                                            <button class="shopping-cart__product-counter-forward">
+                                                <img src="./img/shopping-cart/forward-counter-icon.svg" alt="forward counter">
+                                            </button>
+                                        </div>
+
+                                        <span class="shopping-cart__product-price">$1399</span>
+
+                                        <button class="shopping-cart__product-delete">
+                                            <img src="./img/shopping-cart/delete-product-icon.svg" alt="delete product">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="summary">
+                        <div class="summary__content">
+                            <h2 class="summary__title">Order Summary</h2>
+                            <form class="summary__form">
+                                <div class="summary__promo summary__form-item">
+                                    <label for="promoCode">Discount code / Promo code</label>
+                                    <input type="text" id="promoCode" placeholder="Code">
+                                </div>
+
+                                <div class="summary__card-number summary__form-item">
+                                    <label for="cardNumber">Your bonus card number</label>
+                                    <div class="input-group">
+                                        <input type="number" id="cardNumber" placeholder="Enter Card Number">
+                                        <button type="submit" class="input-group__button">Apply</button>
+                                    </div>
+                                </div>
+
+                                <div class="summary__prices">
+                                    <div class="summary__prices-subtotal summary__prices-option">
+                                        <p class="summary__prices-option-info">Subtotal</p>
+                                        <span class="summary__prices-option-value" id="subtotal">$2347</span>
+                                    </div>
+
+                                    <div class="summary__prices-taxes">
+                                        <div class="summary__prices-option">
+                                            <p class="summary__prices-option-info">Estimated Tax</p>
+                                            <span class="summary__prices-option-value">$50</span>
+                                        </div>
+
+                                        <div class="summary__prices-option">
+                                            <p class="summary__prices-option-info">Estimated shipping & Handling</p>
+                                            <span class="summary__prices-option-value">$29</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="summary__prices-total summary__prices-option">
+                                        <p class="summary__prices-option-info">Total</p>
+                                        <span class="summary__prices-option-value" id="total">$2426</span>
+                                    </div>
+                                </div>
+
+                                <button class="summary__button black-btn">Checkout</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__top">
+                    <div class="footer__logo-text">
+                        <div class="footer__logo">
+                            <a href="#">
+                                <img src="./img/footer/logo.png" alt="Logo 'cyber'">
+                            </a>
+                        </div>
+                        <p class="footer-logo__text">
+                            We are a residential interior design firm located in Portland. 
+                            Our boutique-studio offers more than
+                        </p>
+                    </div>
+
+                    <nav class="footer__nav">
+                        <div class="footer__nav-column">
+                            <h4 class="footer__nav-title">Services</h4>
+                            <ul class="footer__nav-list">
+                                <li><a href="#">Bonus program</a></li>
+                                <li><a href="#">Gift cards</a></li>
+                                <li><a href="#">Credit and payment</a></li>
+                                <li><a href="#">Service contracts</a></li>
+                                <li><a href="#">Non-cash account</a></li>
+                                <li><a href="#">Payment</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer__nav-column">
+                            <h4 class="footer__nav-title">Assistance to the buyer</h4>
+                            <ul class="footer__nav-list">
+                                <li><a href="#">Find an order</a></li>
+                                <li><a href="#">Terms of delivery</a></li>
+                                <li><a href="#">Exchange and return of goods</a></li>
+                                <li><a href="#">Guarantee</a></li>
+                                <li><a href="#">Frequently asked questions</a></li>
+                                <li><a href="#">Terms of use of the site</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+
+                <div class="footer__bottom">
+                    <div class="footer__social">
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/product.js"></script>
+    <script src="./js/cart.js"></script>
+</body>
+</html>

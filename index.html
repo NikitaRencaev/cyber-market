@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cyber - Онлайн маркет для покупок в интернете</title>
 
+    <link rel="icon" href="./img/favicon.icon.ico">
     <link rel="stylesheet" href="fonts/font-awesome/css/all.css" />
     <link rel="stylesheet" href="./css/main.css">
 </head>
@@ -12,8 +13,8 @@
     <header class="header">
         <div class="container">
             <div class="header__content">
-                <div class="header__top">
-                    <a href="#" class="header__logo">
+                <div class="header__top header__desktop">
+                    <a href="./index.html" class="header__logo">
                         <img src="./img/header/header-logo.png" alt="Logo 'cyber'">
                     </a>
 
@@ -32,29 +33,65 @@
                     </nav>
 
                     <div class="header__actions">
-                        <button class="header-actions__wishlist" aria-label="Избранное">
+                        <a class="header-actions__wishlist" aria-label="Избранное">
                             <img src="./img/header/wishlist-icon.svg" alt="Избранное">
-                        </button>
+                        </a>
 
-                        <button class="header-actions__cart" aria-label="Корзина">
+                        <a class="header-actions__cart" href="./shopping-cart.html" aria-label="Корзина">
                             <img src="./img/header/cart-icon.svg" alt="Корзина">
                             <span id="cartNotification"></span>
-                        </button>
+                        </a>
 
                         <a href="#" aria-label="Профиль" class="header-actions__profile">
                             <img src="./img/header/profile-icon.svg" alt="Профиль">
                         </a>
                     </div>
+                </div>
 
-                    <!-- Mobile  -->
+                <!-- Mobile header content -->
+                <div class="header__mobile">
+                    <a href="#" class="header__logo">
+                        <img src="./img/header/header-logo.png" alt="Logo 'cyber'">
+                    </a>
+
+                    <div class="header-mobile__content" id="burgerMenuContent">
+                        <div class="header__search header-mobile__search" role="search">
+                            <button class="header__search-btn">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                            <input type="search" placeholder="Search">
+                        </div>
+
+                        <div class="header__actions header-mobile__actions">
+                            <a class="header-actions__wishlist" aria-label="Избранное">
+                                <img src="./img/header/wishlist-icon.svg" alt="Избранное">
+                            </a>
+
+                            <a class="header-actions__cart" href="./shopping-cart.html" aria-label="Корзина">
+                                <img src="./img/header/cart-icon.svg" alt="Корзина">
+                                <span id="cartNotification"></span>
+                            </a>
+
+                            <a href="#" aria-label="Профиль" class="header-actions__profile">
+                                <img src="./img/header/profile-icon.svg" alt="Профиль">
+                            </a>
+                        </div>
+
+                        <nav class="header__nav header-mobile__nav">
+                            <a href="#" class="active">Home</a>
+                            <a href="#">About</a>
+                            <a href="#">Contact Us</a>
+                            <a href="#">Blog</a>
+                        </nav>
+                    </div>
+
                     <div class="header__burger-menu">
-                        <button class="header-burger-menu__btn">
+                        <button class="header-burger-menu__btn" id="burgerMenuButton">
                             <div class="header-burger-menu__line burger-line-1"></div>
                             <div class="header-burger-menu__line burger-line-2"></div>
                             <div class="header-burger-menu__line burger-line-3"></div>
                         </button>
                     </div>
-                    <!--  -->
                 </div>
 
                 <nav class="header__nav-categories">
@@ -152,7 +189,7 @@
                                         min="0" 
                                         max="10000" 
                                         step="1"
-                                        value="1299"
+                                        value="2000"
                                     >
                                 </div>
                             </div>
@@ -175,73 +212,73 @@
 
                                     <div class="catalog-filters__options-list">
                                         <label class="catalog-filters__options-list-item custom-checkbox">
-                                            <input type="checkbox" class="original-checkbox" name="brand" value="apple">
+                                            <input type="checkbox" class="original-checkbox" name="brand" value="Apple">
                                             <span class="checkbox-mark"></span>
                                             Apple
                                             <span class="count-products">110</span>
                                         </label>
                                         <label class="catalog-filters__options-list-item custom-checkbox">
-                                            <input type="checkbox" class="original-checkbox" name="brand" value="samsung">
+                                            <input type="checkbox" class="original-checkbox" name="brand" value="Samsung">
                                             <span class="checkbox-mark"></span>
                                             Samsung
                                             <span class="count-products">125</span>
                                         </label>
                                         <label class="catalog-filters__options-list-item custom-checkbox">
-                                            <input type="checkbox" class="original-checkbox" name="brand" value="xiaomi">
+                                            <input type="checkbox" class="original-checkbox" name="brand" value="Xiaomi">
                                             <span class="checkbox-mark"></span>
                                             Xiaomi
                                             <span class="count-products">68</span>
                                         </label>
                                         <label class="catalog-filters__options-list-item custom-checkbox">
-                                            <input type="checkbox" class="original-checkbox" name="brand" value="poco">
+                                            <input type="checkbox" class="original-checkbox" name="brand" value="Poco">
                                             <span class="checkbox-mark"></span>
                                             Poco
                                             <span class="count-products">44</span>
                                         </label>
                                         <label class="catalog-filters__options-list-item custom-checkbox">
-                                            <input type="checkbox" class="original-checkbox" name="brand" value="oppo">
+                                            <input type="checkbox" class="original-checkbox" name="brand" value="Oppo">
                                             <span class="checkbox-mark"></span>
                                             OPPO
                                             <span class="count-products">36</span>
                                         </label>
                                         <label class="catalog-filters__options-list-item custom-checkbox">
-                                            <input type="checkbox" class="original-checkbox" name="brand" value="honor">
+                                            <input type="checkbox" class="original-checkbox" name="brand" value="Honor">
                                             <span class="checkbox-mark"></span>
                                             Honor
                                             <span class="count-products">10</span>
                                         </label>
                                         <label class="catalog-filters__options-list-item custom-checkbox">
-                                            <input type="checkbox" class="original-checkbox" name="brand" value="motorola">
+                                            <input type="checkbox" class="original-checkbox" name="brand" value="Motorola">
                                             <span class="checkbox-mark"></span>
                                             Motorola
                                             <span class="count-products">34</span>
                                         </label>
                                         <label class="catalog-filters__options-list-item custom-checkbox">
-                                            <input type="checkbox" class="original-checkbox" name="brand" value="nokia">
+                                            <input type="checkbox" class="original-checkbox" name="brand" value="Nokia">
                                             <span class="checkbox-mark"></span>
                                             Nokia
                                             <span class="count-products">22</span>
                                         </label>
                                         <label class="catalog-filters__options-list-item custom-checkbox">
-                                            <input type="checkbox" class="original-checkbox" name="brand" value="realme">
+                                            <input type="checkbox" class="original-checkbox" name="brand" value="Realme">
                                             <span class="checkbox-mark"></span>
                                             Realme
                                             <span class="count-products">35</span>
                                         </label>
                                         <label class="catalog-filters__options-list-item custom-checkbox">
-                                            <input type="checkbox" class="original-checkbox" name="brand" value="onePlus">
+                                            <input type="checkbox" class="original-checkbox" name="brand" value="OnePlus">
                                             <span class="checkbox-mark"></span>
                                             OnePlus
                                             <span class="count-products">29</span>
                                         </label>
                                         <label class="catalog-filters__options-list-item custom-checkbox">
-                                            <input type="checkbox" class="original-checkbox" name="brand" value="vivo">
+                                            <input type="checkbox" class="original-checkbox" name="brand" value="Vivo">
                                             <span class="checkbox-mark"></span>
                                             Vivo
                                             <span class="count-products">9</span>
                                         </label>
                                         <label class="catalog-filters__options-list-item custom-checkbox">
-                                            <input type="checkbox" class="original-checkbox" name="brand" value="nothing">
+                                            <input type="checkbox" class="original-checkbox" name="brand" value="Nothing">
                                             <span class="checkbox-mark"></span>
                                             Nothing
                                             <span class="count-products">12</span>
@@ -492,5 +529,6 @@
     </footer>
 
     <script src="./js/main.js" defer></script>
+    <script src="./js/product.js" defer></script>
 </body>
 </html>
