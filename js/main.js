@@ -89,33 +89,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Генерация карт, показ карт, фильтры
     const allProducts = [
-        { id: 0, type: "smartphone", brand: "Apple", name: "iPhone 14 Pro", memory: "512GB", color: "Gold", code: "MQ233", photo: "./img/catalog/products/iphone/Iphone 14 Pro/Iphone 14 pro 512gb.png", price: 1437 },
-        { id: 1, type: "smartphone", brand: "Apple", name: "iPhone 11", memory: "128GB", color: "White", code: "MQ233", photo: "./img/catalog/products/iphone/Iphone 11/Iphone 11 128gb.png", price: 510 },
-        { id: 2, type: "smartphone", brand: "Apple", name: "iPhone 11", memory: "128GB", color: "White", code: "MQ233", photo: "./img/catalog/products/iphone/Iphone 11/Iphone 11 128gb.png", price: 550 },
-        { id: 3, type: "smartphone", brand: "Apple", name: "iPhone 14 Pro", memory: "1TB", color: "White", code: "MQ2V3", photo: "./img/catalog/products/iphone/Iphone 14 Pro/Iphone 14 pro 1tb.png", price: 1499 },
-        { id: 4, type: "smartphone", brand: "Apple", name: "iPhone 14 Pro", memory: "1TB", color: "Gold", code: "MQ2V3", photo: "./img/catalog/products/iphone/Iphone 14 Pro/Iphone 14 pro 1tb gold.png", price: 1399 },
-        { id: 5, type: "smartphone", brand: "Apple", name: "iPhone 14 Pro", memory: "128GB", color: "Deep Purple", code: "MQ0G3", photo: "./img/catalog/products/iphone/Iphone 14 Pro Max/Iphone 14 pro 128gb deep-purple.png", price: 1600 },
-        { id: 6, type: "smartphone", brand: "Apple", name: "iPhone 13 mini", memory: "128GB", color: "Pink", code: "MLK23", photo: "./img/catalog/products/iphone/Iphone 13 mini/Iphone 13 mini 128gb pink.png", price: 850 },
-        { id: 7, type: "smartphone", brand: "Apple", name: "iPhone 14 Pro", memory: "256GB", color: "Space Black", code: "MQ0T3", photo: "./img/catalog/products/iphone/Iphone 14 Pro/Iphone 14 pro 256gb space-black.png", price: 1399 },
-        { id: 8, type: "smartphone", brand: "Apple", name: "iPhone 14 Pro", memory: "256GB", color: "Silver", code: "MQ103", photo: "./img/catalog/products/iphone/Iphone 14 Pro/Iphone 14 pro 256gb silver.png", price: 1399 },
-        { id: 9, type: "smartphone", brand: "Apple", name: "iPhone 14 Pro", memory: "512GB", color: "Gold", code: "MQ233", photo: "./img/catalog/products/iphone/Iphone 14 Pro/Iphone 14 pro 512gb.png", price: 1437 },
-        { id: 10, type: "smartphone", brand: "Apple", name: "iPhone 11", memory: "128GB", color: "White", code: "MQ233", photo: "./img/catalog/products/iphone/Iphone 11/Iphone 11 128gb.png", price: 510 },
-        { id: 11, type: "smartphone", brand: "Apple", name: "iPhone 11", memory: "128GB", color: "White", code: "MQ233", photo: "./img/catalog/products/iphone/Iphone 11/Iphone 11 128gb.png", price: 550 },
-        { id: 12, type: "smartphone", brand: "Apple", name: "iPhone 14 Pro", memory: "1TB", color: "White", code: "MQ2V3", photo: "./img/catalog/products/iphone/Iphone 14 Pro/Iphone 14 pro 1tb.png", price: 1499 },
-        { id: 13, type: "smartphone", brand: "Apple", name: "iPhone 14 Pro", memory: "1TB", color: "Gold", code: "MQ2V3", photo: "./img/catalog/products/iphone/Iphone 14 Pro/Iphone 14 pro 1tb gold.png", price: 1399 },
-        { id: 14, type: "smartphone", brand: "Apple", name: "iPhone 14 Pro", memory: "128GB", color: "Deep Purple", code: "MQ0G3", photo: "./img/catalog/products/iphone/Iphone 14 Pro Max/Iphone 14 pro 128gb deep-purple.png", price: 1600 },
-        { id: 15, type: "smartphone", brand: "Apple", name: "iPhone 13 mini", memory: "128GB", color: "Pink", code: "MLK23", photo: "./img/catalog/products/iphone/Iphone 13 mini/Iphone 13 mini 128gb pink.png", price: 850 },
-        { id: 16, type: "smartphone", brand: "Apple", name: "iPhone 14 Pro", memory: "256GB", color: "Space Black", code: "MQ0T3", photo: "./img/catalog/products/iphone/Iphone 14 Pro/Iphone 14 pro 256gb space-black.png", price: 1399 },
-        { id: 17, type: "smartphone", brand: "Apple", name: "iPhone 14 Pro", memory: "256GB", color: "Silver", code: "MQ103", photo: "./img/catalog/products/iphone/Iphone 14 Pro/Iphone 14 pro 256gb silver.png", price: 1399 },
-        { id: 18, type: "smartphone", brand: "Apple", name: "iPhone 14 Pro", memory: "512GB", color: "Gold", code: "MQ233", photo: "./img/catalog/products/iphone/Iphone 14 Pro/Iphone 14 pro 512gb.png", price: 1437 },
-        { id: 19, type: "smartphone", brand: "Apple", name: "iPhone 11", memory: "128GB", color: "White", code: "MQ233", photo: "./img/catalog/products/iphone/Iphone 11/Iphone 11 128gb.png", price: 510 },
-        { id: 20, type: "smartphone", brand: "Apple", name: "iPhone 11", memory: "128GB", color: "White", code: "MQ233", photo: "./img/catalog/products/iphone/Iphone 11/Iphone 11 128gb.png", price: 550 },
-        { id: 21, type: "smartphone", brand: "Apple", name: "iPhone 14 Pro", memory: "1TB", color: "White", code: "MQ2V3", photo: "./img/catalog/products/iphone/Iphone 14 Pro/Iphone 14 pro 1tb.png", price: 1499 },
-        { id: 22, type: "smartphone", brand: "Apple", name: "iPhone 14 Pro", memory: "1TB", color: "Gold", code: "MQ2V3", photo: "./img/catalog/products/iphone/Iphone 14 Pro/Iphone 14 pro 1tb gold.png", price: 1399 },
-        { id: 23, type: "smartphone", brand: "Apple", name: "iPhone 14 Pro", memory: "128GB", color: "Deep Purple", code: "MQ0G3", photo: "./img/catalog/products/iphone/Iphone 14 Pro Max/Iphone 14 pro 128gb deep-purple.png", price: 1600 },
-        { id: 24, type: "smartphone", brand: "Apple", name: "iPhone 13 mini", memory: "128GB", color: "Pink", code: "MLK23", photo: "./img/catalog/products/iphone/Iphone 13 mini/Iphone 13 mini 128gb pink.png", price: 850 },
-        { id: 25, type: "smartphone", brand: "Apple", name: "iPhone 14 Pro", memory: "256GB", color: "Space Black", code: "MQ0T3", photo: "./img/catalog/products/iphone/Iphone 14 Pro/Iphone 14 pro 256gb space-black.png", price: 1399 },
-        { id: 26, type: "smartphone", brand: "Apple", name: "iPhone 14 Pro", memory: "256GB", color: "Silver", code: "MQ103", photo: "./img/catalog/products/iphone/Iphone 14 Pro/Iphone 14 pro 256gb silver.png", price: 1399 }
+        { id: 0, type: "smartphone", brand: "Apple", name: "iPhone 11 White", color: "White", code: "MQ233", memory: ["128GB"], photo: "img/catalog/products/iphone/Iphone-11/iphone-11-white.png", price: 510 },
+        { id: 3, type: "smartphone", brand: "Apple", name: "iPhone 14 Pro Max Deep-purple", color: "Deep-purple", code: "MQ0G3", memory: ["128GB", "256GB", "1TB"], photo: "img/catalog/products/iphone/Iphone-14-proMax/iPhone-14-proMax-deepPurple/iphone-14-proMax-deepPurple.png", price: 1600 },
+        { id: 1, type: "smartphone", brand: "Apple", name: "iPhone 13 mini Pink", color: "Pink", code: "MLK23", memory: ["128GB", "256GB"], photo: "img/catalog/products/iphone/Iphone-13-mini/iphone-13-mini-pink.png", price: 850 },
+        { id: 2, type: "smartphone", brand: "Apple", name: "iPhone 14 Pro Space-black", color: "Space-black", code: "MQ0T3", memory: ["128GB", "256GB", "512GB"], photo: "img/catalog/products/iphone/Iphone-14-pro/iPhone-14-pro-spaceBlack/iphone-14-pro-spaceBlack.png", price: 1399 }
     ];
 
     const priceInputMin = document.getElementById('priceMin');
@@ -181,7 +158,18 @@ document.addEventListener('DOMContentLoaded', () => {
         renderCards();
     };
 
-    const productPerPage = 9; // Кол-во продуктов на странице
+    let productPerPage = window.innerWidth <= 800 ? 8 : 9; // Кол-во продуктов на странице 
+    // Если экран поменялся без перезагрузки страницы
+    window.addEventListener('resize', () => {
+        const newProductPerPage = window.innerWidth <= 800 ? 8 : 9;
+        if (newProductPerPage !== productPerPage) {
+            productPerPage = newProductPerPage;
+            currentPage = 1;
+            renderCards();
+            updatePagination(currentCards.length);
+        }
+    });
+
     let currentPage = 1; // Номер открытой страницы
 
     function renderCards() {
@@ -203,7 +191,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         return parseInt(mem);
                     }
                 };
-                return toGB(b.memory) - toGB(a.memory);
+                return toGB(b.memory[b.memory.length - 1]) - toGB(a.memory[a.memory.length - 1]);
             });
         }
         console.log(sortedCards);
@@ -219,16 +207,17 @@ document.addEventListener('DOMContentLoaded', () => {
             div.innerHTML = `
                 <div class="catalog-products-card__favorite">
                     <button class="catalog-products-card__favorite-btn" aria-label="Add to favorite" type="button">
-                        <i class="fa-regular fa-heart"></i>
+                        <img src="./img/catalog/favorite-icon.svg" alt="Add to favorite" class="border-icon">
+                        <img src="./img/catalog/favorite-full-icon.svg" alt="Delete from favorite" class="fill-icon">
                     </button>
                 </div>
 
                 <div class="catalog-products-card__photo">
-                    <img src="${product.photo}" alt="${product.brand} ${product.name} ${product.memory} ${product.color}">
+                    <img src="${product.photo}" alt="${product.brand} ${product.name}">
                 </div>
 
                 <p class="catalog-products-card__info">
-                    ${product.brand} ${product.name} ${product.memory} ${product.color} (${product.code})
+                    ${product.brand} ${product.name} (${product.code})
                 </p>
 
                 <span class="catalog-products-card__price">$${product.price}</span>
@@ -238,9 +227,21 @@ document.addEventListener('DOMContentLoaded', () => {
                         Buy Now
                     </button>
                 </div>
-            `
+            `;
+            // Переход на страницу товара
+            div.querySelector('.catalog-products-card__btn').addEventListener('click', () => {
+                window.location.href = `product.html?id=${product.id}`;
+            });
 
             productsContainer.appendChild(div);
+        });
+
+        // Добавление в избранное (анимация)
+        const favoriteBtn = document.querySelectorAll('.catalog-products-card__favorite-btn');
+        favoriteBtn.forEach(btn => {
+            btn.addEventListener('click', () => {
+                btn.querySelector('.fill-icon').classList.toggle('active');
+            });
         });
     };
 
@@ -251,7 +252,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const totalPages = Math.ceil(currentCards.length / productPerPage);
         const visibleButtons = 4;
 
-        // Функция создания кнопки
         function createBtn(text, page, active = false) {
             const btn = document.createElement('button');
             btn.classList.add('catalog-products-cards-pagination__btn');
@@ -267,7 +267,6 @@ document.addEventListener('DOMContentLoaded', () => {
             return btn;
         }
 
-        // Стрелка влево
         const prevBtn = document.querySelector('.catalog-products-cards-pagination__prev');
         prevBtn.onclick = () => {
             if (currentPage > 1) {
@@ -277,7 +276,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         };
 
-        // Стрелка вправо
         const nextBtn = document.querySelector('.catalog-products-cards-pagination__next');
         nextBtn.onclick = () => {
             if (currentPage < totalPages) {
@@ -287,31 +285,29 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         };
 
-        // Расчёт видимых страниц
         let startPage, endPage;
 
         if (totalPages <= visibleButtons) {
-            // Если страниц мало — показываем все
             startPage = 1;
             endPage = totalPages;
         } else {
             if (currentPage <= 2) {
-            startPage = 1;
-            endPage = visibleButtons;
+                startPage = 1;
+                endPage = visibleButtons;
             } else if (currentPage >= totalPages - 1) {
-            startPage = totalPages - visibleButtons + 1;
-            endPage = totalPages;
+                startPage = totalPages - visibleButtons + 1;
+                endPage = totalPages;
             } else {
-            startPage = currentPage - 1;
-            endPage = currentPage + 2;
+                startPage = currentPage - 1;
+                endPage = currentPage + 2;
             if (endPage > totalPages) endPage = totalPages;
             }
         }
 
-        // Кнопка 1
-        container.appendChild(createBtn('1', 1, currentPage === 1));
+        if (startPage > 1) {
+            container.appendChild(createBtn('1', 1, currentPage === 1));
+        }
 
-        // Точки слева
         if (startPage > 2) {
             const dots = document.createElement('span');
             dots.classList.add('dots');
@@ -319,14 +315,10 @@ document.addEventListener('DOMContentLoaded', () => {
             container.appendChild(dots);
         }
 
-        // Основные кнопки
         for (let i = startPage; i <= endPage; i++) {
-            if (i !== 1 && i !== totalPages) { // 1 и последнюю не дублируем
             container.appendChild(createBtn(i, i, i === currentPage));
-            }
         }
 
-        // Точки справа
         if (endPage < totalPages - 1) {
             const dots = document.createElement('span');
             dots.classList.add('dots');
@@ -334,7 +326,6 @@ document.addEventListener('DOMContentLoaded', () => {
             container.appendChild(dots);
         }
 
-        // Последняя кнопка
         if (totalPages > visibleButtons) {
             container.appendChild(createBtn(totalPages, totalPages, currentPage === totalPages));
         }
@@ -343,11 +334,79 @@ document.addEventListener('DOMContentLoaded', () => {
     filterChange();
     // 
 
+    // Счётчик всех товаров
+    // По названию бренда
+    const catalogFiltersOptions = document.querySelector('.catalog-filters__options-list');
+    [...catalogFiltersOptions.children].forEach(label => {
+        const checkbox = label.querySelector('input');
+        const counter = allProducts.filter(product => product.brand == checkbox.value).length;
+        label.querySelector('.count-products').textContent = counter;
+    });
+
+    // По нколичеству памяти
+    const catalogFiltersMemory = document.querySelector('.catalog-filters__memory-list');
+    [...catalogFiltersMemory.children].forEach(label => {
+        const checkbox = label.querySelector('input');
+        const counter = allProducts.filter((product) => {
+            if (product.memory.includes(checkbox.value))
+                return true;
+        }).length;
+        label.querySelector('.count-products').textContent = counter;
+    });
+    // 
+
     // Переход на страницу описания товара
     document.querySelectorAll('.catalog-products-card__btn').forEach(btn => {
         btn.addEventListener('click', () => {
             window.open('product.html');
         });
     });
+    // 
+
+    // Шапка, бургер меню
+    const burgerMenuButton = document.getElementById('burgerMenuButton');
+    const burgerMenuContent = document.getElementById('burgerMenuContent');
+    let interval = true;
+
+    burgerMenuButton.addEventListener('click', () => {
+        if (interval === true) {
+            burgerMenuButton.classList.toggle('active');
+            const burgerMenuLines = [...burgerMenuButton.children]
+            interval = false;
+            
+            if (burgerMenuButton.classList.contains('active')) {
+                burgerMenuLines.forEach((btn, index) => {
+                    btn.style.animation = `burgerAnimationLine${index + 1} .5s ease forwards`;
+                });
+                burgerMenuContent.classList.add('active'); // Открываем контент бургер меню
+                document.querySelector('body').style.overflowY = 'hidden';
+            } else {
+                burgerMenuLines.forEach((btn, index) => {
+                    btn.style.animation = `burgerAnimationLine${index + 1}Reverse .5s ease forwards`;
+                });
+                burgerMenuContent.classList.remove('active'); // Закрываем контент бургер меню
+                document.querySelector('body').style.overflowY = 'visible';
+            }
+
+            setTimeout(() => {
+                interval = true;
+            }, 500);
+        }
+    });
+    // 
+
+    // Скрываем или показываем красный кружок у иконки корзины
+    const allCartIcon = [...document.querySelectorAll('.header-actions__cart')];
+    const badge = JSON.parse(localStorage.getItem('badge'));
+
+    if (badge === true) {
+        allCartIcon.forEach(icon => {
+            icon.classList.add('new');
+        });
+    } else {
+        allCartIcon.forEach(icon => {
+            icon.classList.remove('new');
+        });
+    }
     // 
 });
