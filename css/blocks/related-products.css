@@ -1,0 +1,24 @@
+.related-products {
+    padding: 80px 0;
+}
+
+.related-products__title {
+    font-size: 24px;
+    line-height: 32px;
+    padding-bottom: 32px;
+}
+
+.related-products__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+@media (max-width: 800px) {
+    .related-products {
+        padding: 56px 0;
+    }
+    .related-products__cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

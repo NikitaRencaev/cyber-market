@@ -1,0 +1,229 @@
+.reviews {
+    padding: 88px 0;
+}
+
+.reviews__top {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.reviews__title {
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--main-black);
+}
+
+.reviews__overall-rating {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.reviews__overall-block {
+    display: flex;
+    align-items: center;
+    padding: 32px;
+    max-width: 184px;
+    max-height: 192px;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    gap: 16px;
+    background: #FAFAFA;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.reviews__overall-title {
+    font-size: 56px;
+    line-height: 56px;
+    color: var(--main-black);
+    margin-bottom: 16px;
+}
+
+.reviews__number-rating {
+    font-size: 15px;
+    line-height: 16px;
+    opacity: 0.3;
+}
+
+.reviews__stars {
+    position: relative;
+    font-size: 16px;
+    color: var(--orange-stars);
+}
+
+.reviews__stars-fill {
+    position: absolute;
+    left: 0; top: 0;
+    overflow: hidden;
+    width: calc(var(--rating) * 19.5%);
+    white-space: nowrap;
+}
+
+.reviews__schedule {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.reviews__schedule-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reviews__schedule-option-name {
+    font-size: 18px;
+    width: 116px;
+}
+
+.reviews__schedule-option-value {
+    width: 28px;
+    font-size: 16px;
+    opacity: 0.4;
+    text-align: right;
+}
+
+.reviews__schedule-rating-bar {
+    max-width: 700px;
+    width: 100%;
+    height: 5px;
+    border-radius: 16px;
+    background: #D9D9D9;
+    overflow: hidden;
+}
+
+.reviews__schedule-rating-bar-fill {
+    height: 100%;
+    width: var(--fill);
+    background: var(--orange-stars);
+    border-radius: 16px;
+}
+
+.reviews__comment-input {
+    width: 100%;
+    padding: 24px 16px;
+    font-family: "SFRegular";
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -0.005em;
+    color: var(--main-black);
+    border-radius: 7px;
+    box-shadow: 0 0 0 0.5px #B5B5B5;
+}
+.reviews__comment-input::placeholder {
+    font-family: "SFRegular";
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -0.005em;
+    color: #979797;
+}
+
+/* Comment styles */
+.reviews__bottom {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 24px;
+    padding-top: 32px;
+}
+
+.reviews__comment {
+    display: flex;
+    padding: 24px 28px 24px 16px;
+    gap: 19px;
+    background: #FAFAFA;
+    border-radius: 10px;
+}
+
+.reviews__comment-avatar {
+    max-width: 56px;
+    max-height: 56px;
+}
+
+.reviews__comment-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.reviews__comment-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reviews__comment-username {
+    font-family: "SFBold";
+    font-size: 17px;
+    line-height: 24px;
+}
+
+.reviews__comment-data {
+    font-size: 14px;
+    opacity: 0.2;
+}
+
+.reviews__comment-message {
+    font-size: 15px;
+    line-height: 24px;
+    color: #7E7E7E;
+}
+
+.reviews__comment-photos {
+    display: flex;
+    gap: 8px;
+}
+
+.reviews__comment-photo {
+    max-width: 120px;
+    max-height: 88px;
+    border-radius: 6px;
+}
+
+.reviews__comment-stars {
+    max-width: 113px;
+}
+
+.reviews__bottom-btn {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.reviews__bottom .reviews__comment:last-of-type {
+    position: relative;
+}
+
+.reviews__bottom .reviews__comment:last-of-type::after {
+    content: "";
+    position: absolute;
+    left: 0; right: 0; bottom: 0; top: 0;
+    background: #ffffff;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 0) 100%);
+}
+
+@media (max-width: 800px) {
+    .reviews__overall-rating {
+        flex-direction: column;
+    }
+
+    .reviews__overall-block {
+        flex-direction: row;
+        justify-content: center;
+        gap: 32px;
+        max-width: 100%;
+        max-height: 152px;
+    }
+
+    .reviews__schedule-rating-bar {
+        max-width: 168px;
+    }
+
+    .reviews__comment-data {
+        font-size: 12px;
+    }
+}

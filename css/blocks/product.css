@@ -4,13 +4,15 @@
 
 .product__content {
     display: flex;
-    justify-content: space-between;
+    gap: 48px;
+    /* justify-content: space-between; */
 }
 
 .product__photos {
     display: flex;
     align-items: center;
     gap: 48px;
+    width: 100%;
 }
 
 .product__swith-img {
@@ -20,17 +22,26 @@
     gap: 24px;
 }
 .product__swith-img img {
-    max-width: 46px;
+    max-width: 75px;
     max-height: 93px;
     opacity: 0.4;
     transition: opacity .5s ease;
     cursor: pointer;
 }
 .product__swith-img img.active {
-    max-width: 75px;
-    max-height: 93px;
-    height: 100%;
     opacity: 1;
+}
+
+.product__current-img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.product__current-img img {
+    max-height: 516px;
+    max-width: 415px;
+    margin: 0 auto;
 }
 
 .product__info-block {
@@ -82,16 +93,21 @@
 }
 
 .product__color-btn {
+    display: none;
     width: 32px;
     height: 32px;
     border-radius: 32px;
 }
+.product__color-btn.active {
+    display: block;
+}
 
-.product__color-btn[value="black"] {background: black;}
-.product__color-btn[value="purple"] {background: #781DBC;}
-.product__color-btn[value="red"] {background: #E10000;}
-.product__color-btn[value="yellow"] {background: #E1B000;}
-.product__color-btn[value="white"] {background: #E8E8E8;}
+.product__color-btn[value="space-black"] {background: black;}
+.product__color-btn[value="deep-purple"] {background: #781DBC;}
+.product__color-btn[value="pink"] {background: #ff10a3;}
+.product__color-btn[value="gold"] {background: #E1B000;}
+.product__color-btn[value="white"] {background: #ffffff; border: 1px solid black;}
+.product__color-btn[value="silver"] {background: #E8E8E8;}
 
 .product__memory {
     display: flex;
@@ -198,7 +214,15 @@
     border: 1px solid var(--main-black);
     color: var(--main-black);
 }
-
+#addCard {
+    border: 1px solid var(--main-black);
+    transition: all .5s ease;
+}
+#addCard.active {
+    background: var(--main-white);
+    border: 1px solid var(--main-black);
+    color: var(--main-black);
+}
 .product__benefits {
     display: flex;
     align-items: center;

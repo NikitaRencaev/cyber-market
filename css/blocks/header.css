@@ -69,7 +69,7 @@
     opacity: 0.2;
 }
 
-.header__burger-menu {
+.header__mobile {
     display: none;
 }
 
@@ -87,7 +87,24 @@
     width: 25px;
     height: 2px;
     background: var(--main-black);
+    transform: translateY(0) rotate(0);
+    opacity: 1;
     transition: all .5s ease;
+}
+
+/* Красный кружок корзины при новом товаре */
+.header-actions__cart.new {
+    position: relative;
+}
+.header-actions__cart.new::before {
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    border-radius: 7px;
+    right: -2px;
+    top: 0px;
+    background: #e40606;
 }
 
 /* Анимация для бургер меню (включается с помощью JavaScript) */
@@ -105,6 +122,22 @@
     0% {transform: translateY(0px);}
     50% {transform: translateY(-7px) rotate(0deg);}
     100% {transform: translateY(-7px) rotate(-45deg);}
+}
+
+@keyframes burgerAnimationLine1Reverse {
+    0% {transform: translateY(7px) rotate(45deg);}
+    50% {transform: translateY(7px) rotate(0);}
+    100% {transform: translateY(0);}
+}
+@keyframes burgerAnimationLine2Reverse {
+    50% {opacity: 0;}
+    51% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes burgerAnimationLine3Reverse {
+    0% {transform: translateY(-7px) rotate(-45deg);}
+    50% {transform: translateY(-7px) rotate(0deg);}
+    100% {transform: translateY(0);}
 }
 /*  */
 
@@ -126,19 +159,54 @@
 }
 
 @media (max-width: 630px) {
-    .header__nav {
-        display: none;
-    }
-
-    .header__actions {
-        display: none;
-    }
-
     .header__nav-categories {
         display: none;
     }
 
-    .header__burger-menu {
-        display: block;
+    .header__mobile {
+        position: relative;
+        z-index: 99;
+        display: flex;
+        width: 100%;
+        padding: 24px 0;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
     }
+
+    .header__desktop {
+        display: none;
+    }
+
+    .header-mobile__search[role="search"] {
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .header-mobile__content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        position: absolute;
+        height: 100vh;
+        width: calc(100% + 2px);
+        top: 90px;
+        left: -150%;
+        background: var(--main-white);
+        transition: all .5s ease;
+    }
+    .header-mobile__content.active {
+        left: -1px;
+    }
+    
+    .header-mobile__nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .header-mobile__actions {
+        flex-direction: column;
+        gap: 15px;
+    }
+
 }

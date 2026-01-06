@@ -204,13 +204,27 @@
         .catalog-products-card__favorite {
             display: flex;
             justify-content: end;
+            position: relative;
             height: 32px;
             font-size: 32px;
             color: rgba(144, 144, 144, 0.77);
         }
+        .catalog-products-card__favorite .fill-icon {
+            position: absolute;
+            right: 0;
+            opacity: 0;
+            transition: opacity .3s;
+        }
+        .catalog-products-card__favorite .fill-icon.active {
+            opacity: 1;
+        }
 
         .catalog-products-card__photo {
             margin-top: 16px;
+        }
+
+        .catalog-products-card__photo img {
+            max-height: 160px;
         }
 
         .catalog-products-card__info {
@@ -218,6 +232,7 @@
             font-size: 16px;
             line-height: 24px;
             color: var(--main-black);
+            height: 48px;
         }
 
         .catalog-products-card__price {
