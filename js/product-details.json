@@ -1,0 +1,169 @@
+{
+    "0": {
+        "id": 0,
+        "fullName": "Apple iPhone 11 (MQ233)",
+        "name": "Apple iPhone 11",
+        "mainPhoto": "img/catalog/products/iphone/Iphone-11/Iphone-11-white-big.png",
+        "currentColor": null,
+        "colors": {
+            "white": [
+                "img/catalog/products/iphone/Iphone-11/Iphone-11-white.png",
+                "img/catalog/products/iphone/Iphone-11/Iphone-11-white-front.png",
+                "img/catalog/products/iphone/Iphone-11/Iphone-11-white-behind.png",
+                "img/catalog/products/iphone/Iphone-11/Iphone-11-white-askance.png"
+            ]
+        },
+        "specs": {
+            "screenSize": "6.1\"",
+            "screenResolution": "1792x828",
+            "screenRefreshRate": "60 Hz",
+            "pixelDensity": "326 ppi",
+            "screenType": "Liquid Retina HD LCD",
+            "screenAdditionally": [
+                "True Tone", 
+                "Wide color (P3)", 
+                "Haptic Touch"
+            ],
+            "cpu": "Apple A13 Bionic",
+            "cpuCores": "6",
+            "mainCamera": "12-12 MP",
+            "frontCamera": "12 MP",
+            "batteryCapacity": "3110 mAh",
+            "memory": ["128GB"]
+        },
+        "lastPrice": 610,
+        "price": 510,
+        "description": "The iPhone 11 combines powerful performance and affordability with a bright 6.1-inch Liquid Retina HD display and the fast A13 Bionic chip. Its dual-camera system delivers stunning photos and 4K video, while all-day battery life and durable design make it a reliable everyday smartphone for users seeking premium features at a reasonable price.",
+        "detailsDescription": "Featuring Night mode for impressive low-light photography, Smart HDR, and Portrait mode with advanced bokeh effects. The device supports wireless charging, IP68 water and dust resistance, and Face ID for secure authentication. With stereo speakers and Dolby Atmos support, it offers an immersive audio experience alongside smooth multitasking capabilities."
+    },
+    "1": {
+        "id": 1,
+        "fullName": "Apple iPhone 13 mini (MLK23)",
+        "name": "Apple iPhone 13 mini",
+        "mainPhoto": "img/catalog/products/iphone/Iphone-13-mini/Iphone-13-mini-pink-big.png",
+        "currentColor": null,
+        "colors": {
+            "pink": [
+                "img/catalog/products/iphone/Iphone-13-mini/Iphone-13-mini-pink.png",
+                "img/catalog/products/iphone/Iphone-13-mini/Iphone-13-mini-pink-front.png",
+                "img/catalog/products/iphone/Iphone-13-mini/Iphone-13-mini-pink-behind.png",
+                "img/catalog/products/iphone/Iphone-13-mini/Iphone-13-mini-pink-askance.png"
+            ]
+        },
+        "specs": {
+            "screenSize": "5.4\"",
+            "screenResolution": "2340x1080",
+            "screenRefreshRate": "60 Hz",
+            "pixelDensity": "476 ppi",
+            "screenType": "Super Retina XDR OLED",
+            "screenAdditionally": [
+                "HDR display", 
+                "True Tone", 
+                "Wide color (P3)", 
+                "Ceramic Shield"
+            ],
+            "cpu": "Apple A15 Bionic",
+            "cpuCores": "6",
+            "mainCamera": "12-12 MP",
+            "frontCamera": "12 MP",
+            "batteryCapacity": "2438 mAh",
+            "memory": ["128GB", "256GB"]
+        },
+        "lastPrice": 950,
+        "price": 850,
+        "description": "The iPhone 13 mini packs flagship-level power into a compact 5.4-inch body, featuring a vibrant Super Retina XDR OLED display and the lightning-fast A15 Bionic chip. Its advanced dual-camera system and improved battery life make it perfect for those who want premium performance in a pocket-friendly size.",
+        "detailsDescription": "Cinematic mode records videos with shallow depth of field, while Photographic Styles let you personalize your shots. The ceramic shield front cover provides superior durability, and 5G connectivity ensures fast downloads. With HDR support, True Tone, and Wide color (P3), the display delivers exceptional brightness and color accuracy in any lighting."
+    },
+    "2": {
+        "id": 2,
+        "fullName": "Apple iPhone 14 Pro (MQ233)",
+        "name": "Apple iPhone 14 Pro",
+        "mainPhoto": "img/catalog/products/iphone/Iphone-14-Pro/iPhone-14-pro-Space-black/Iphone-14-pro-space-black-big.png",
+        "currentColor": null,
+        "colors": {
+            "space-black": [
+                "img/catalog/products/iphone/Iphone-14-Pro/iPhone-14-pro-spaceBlack/Iphone-14-pro-spaceBlack.png",
+                "img/catalog/products/iphone/Iphone-14-Pro/iPhone-14-pro-spaceBlack/Iphone-14-pro-spaceBlack-front.png",
+                "img/catalog/products/iphone/Iphone-14-Pro/iPhone-14-pro-spaceBlack/Iphone-14-pro-spaceBlack-behind.png",
+                "img/catalog/products/iphone/Iphone-14-Pro/iPhone-14-pro-spaceBlack/Iphone-14-pro-spaceBlack-askance.png"
+            ],
+            "silver": [
+                "img/catalog/products/iphone/Iphone-14-Pro/iPhone-14-pro-silver/Iphone-14-pro-silver.png",
+                "img/catalog/products/iphone/Iphone-14-Pro/iPhone-14-pro-silver/Iphone-14-pro-silver-front.png",
+                "img/catalog/products/iphone/Iphone-14-Pro/iPhone-14-pro-silver/Iphone-14-pro-silver-behind.png",
+                "img/catalog/products/iphone/Iphone-14-Pro/iPhone-14-pro-silver/Iphone-14-pro-silver-askance.png"
+            ],
+            "gold": [
+                "img/catalog/products/iphone/Iphone-14-Pro/iPhone-14-pro-gold/Iphone-14-pro-gold.png",
+                "img/catalog/products/iphone/Iphone-14-Pro/iPhone-14-pro-gold/Iphone-14-pro-gold-front.png",
+                "img/catalog/products/iphone/Iphone-14-Pro/iPhone-14-pro-gold/Iphone-14-pro-gold-behind.png",
+                "img/catalog/products/iphone/Iphone-14-Pro/iPhone-14-pro-gold/Iphone-14-pro-gold-askance.png"
+            ]
+        },
+        "specs": {
+            "screenSize": "6.1\"",
+            "screenResolution": "2556x1179",
+            "screenRefreshRate": "120 Hz",
+            "pixelDensity": "460 ppi",
+            "screenType": "Super Retina XDR OLED",
+            "screenAdditionally": [
+                "Dynamic Island", 
+                "Always-On display", 
+                "HDR display", 
+                "True Tone", 
+                "Wide color (P3)", 
+                "ProMotion"
+            ],
+            "cpu": "Apple A16 Bionic",
+            "cpuCores": "6",
+            "mainCamera": "48-12-12 MP",
+            "frontCamera": "12 MP",
+            "batteryCapacity": "3200 mAh",
+            "memory": ["128GB", "256GB", "512GB"]
+        },
+        "lastPrice": 1537,
+        "price": 1437,
+        "description": "The iPhone 14 Pro introduces groundbreaking innovations like Dynamic Island and Always-On display on its 6.1-inch Super Retina XDR screen with ProMotion. Powered by the A16 Bionic chip, it offers unmatched speed and efficiency alongside a revolutionary 48MP triple-camera system for professional-grade photography and videography.",
+        "detailsDescription": "The Photonic Engine dramatically improves low-light performance, while Action mode delivers ultra-stable video. Safety features include Crash Detection and Emergency SOS via satellite. With stainless steel design, Ceramic Shield protection, and IP68 rating, it combines premium build quality with cutting-edge technology for creators and power users."
+    },
+    "3": {
+        "id": 3,
+        "fullName": "Apple iPhone 14 Pro Max (MQ0G3)",
+        "name": "Apple iPhone 14 Pro Max",
+        "mainPhoto": "img/catalog/products/iphone/Iphone-14-Pro-Max/iPhone-14-Pro-Deep-purple/Iphone-14-pro-128gb-deep-purple.png-big",
+        "currentColor": null,
+        "colors": {
+            "deep-purple": [
+                "img/catalog/products/iphone/Iphone-14-ProMax/iPhone-14-proMax-deepPurple/Iphone-14-proMax-deepPurple.png",
+                "img/catalog/products/iphone/Iphone-14-ProMax/iPhone-14-proMax-deepPurple/Iphone-14-proMax-deepPurple-front.png",
+                "img/catalog/products/iphone/Iphone-14-ProMax/iPhone-14-proMax-deepPurple/Iphone-14-proMax-deepPurple-behind.png",
+                "img/catalog/products/iphone/Iphone-14-ProMax/iPhone-14-proMax-deepPurple/Iphone-14-proMax-deepPurple-askance.png"
+            ]
+        },
+        "specs": {
+            "screenSize": "6.7\"",
+            "screenResolution": "2796x1290",
+            "screenRefreshRate": "120 Hz",
+            "pixelDensity": "460 ppi",
+            "screenType": "Super Retina XDR OLED",
+            "screenAdditionally": [
+                "Dynamic Island", 
+                "Always-On display", 
+                "HDR display", 
+                "True Tone", 
+                "Wide color (P3)", 
+                "ProMotion"
+            ],
+            "cpu": "Apple A16 Bionic",
+            "cpuCores": "6",
+            "mainCamera": "48-12-12 MP",
+            "frontCamera": "12 MP",
+            "batteryCapacity": "3200 mAh",
+            "memory": ["128GB", "256GB", "1TB"]
+        },
+        "lastPrice": 1700,
+        "price": 1600,
+        "description": "The iPhone 14 Pro Max is the ultimate iPhone with its massive 6.7-inch Super Retina XDR display featuring ProMotion and Always-On capability. The A16 Bionic chip delivers exceptional performance, while the longest battery life in the lineup and pro-level camera system make it ideal for demanding users.",
+        "detailsDescription": "The 48MP main sensor with advanced computational photography captures incredible detail, supported by 3x optical zoom and Cinematic mode in 4K Dolby Vision. Dynamic Island transforms notifications into interactive experiences. Additional safety features like Crash Detection, premium stainless steel construction, and superior water resistance ensure reliability in any situation."
+    }
+}
