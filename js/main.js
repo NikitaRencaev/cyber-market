@@ -89,10 +89,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Генерация карт, показ карт, фильтры
     const allProducts = [
-        { id: 0, type: "smartphone", brand: "Apple", name: "iPhone 11 White", color: "White", code: "MQ233", memory: ["128GB"], photo: "img/catalog/products/iphone/Iphone-11/iphone-11-white.png", price: 510 },
-        { id: 3, type: "smartphone", brand: "Apple", name: "iPhone 14 Pro Max Deep-purple", color: "Deep-purple", code: "MQ0G3", memory: ["128GB", "256GB", "1TB"], photo: "img/catalog/products/iphone/Iphone-14-proMax/iPhone-14-proMax-deepPurple/iphone-14-proMax-deepPurple.png", price: 1600 },
-        { id: 1, type: "smartphone", brand: "Apple", name: "iPhone 13 mini Pink", color: "Pink", code: "MLK23", memory: ["128GB", "256GB"], photo: "img/catalog/products/iphone/Iphone-13-mini/iphone-13-mini-pink.png", price: 850 },
-        { id: 2, type: "smartphone", brand: "Apple", name: "iPhone 14 Pro Space-black", color: "Space-black", code: "MQ0T3", memory: ["128GB", "256GB", "512GB"], photo: "img/catalog/products/iphone/Iphone-14-pro/iPhone-14-pro-spaceBlack/iphone-14-pro-spaceBlack.png", price: 1399 }
+        { id: 0, type: "smartphone", brand: "Apple", name: "iPhone 11 White", color: "White", code: "MQ233", memory: ["128GB"], photo: "img/catalog/products/iphone/iphone-11/iphone-11-white.png", price: 510 },
+        { id: 3, type: "smartphone", brand: "Apple", name: "iPhone 14 Pro Max Deep-purple", color: "Deep-purple", code: "MQ0G3", memory: ["128GB", "256GB", "1TB"], photo: "img/catalog/products/iphone/iphone-14-pro-max/iphone-14-pro-max-deep-purple/iphone-14-pro-max-deep-purple.png", price: 1600 },
+        { id: 1, type: "smartphone", brand: "Apple", name: "iPhone 13 mini Pink", color: "Pink", code: "MLK23", memory: ["128GB", "256GB"], photo: "img/catalog/products/iphone/iphone-13-mini/iphone-13-mini-pink.png", price: 850 },
+        { id: 2, type: "smartphone", brand: "Apple", name: "iPhone 14 Pro Space-black", color: "Space-black", code: "MQ0T3", memory: ["128GB", "256GB", "512GB"], photo: "img/catalog/products/iphone/iphone-14-pro/iphone-14-pro-space-black/iphone-14-pro-space-black.png", price: 1399 }
     ];
 
     const priceInputMin = document.getElementById('priceMin');
@@ -134,8 +134,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         if (brandCurrentFilters != 'all') {
-            currentCards.filter(card => {
-                brandCurrentFilters.forEach(filterValue => {
+            brandCurrentFilters.forEach(filterValue => {
+                currentCards = currentCards.filter(card => {
                     if (card.brand == filterValue) return true;
                     else return false;
                 });
@@ -143,9 +143,9 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         if (memoryCurrentFilters!= 'all') {
-            currentCards.filter(card => {
-                memoryCurrentFilters.forEach(filterValue => {
-                    if (card.brand == filterValue) return true;
+            memoryCurrentFilters.forEach(filterValue => {
+                currentCards = currentCards.filter(card => {
+                    if (card.memory.includes(filterValue)) return true;
                     else return false;
                 });
             });
@@ -194,7 +194,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 return toGB(b.memory[b.memory.length - 1]) - toGB(a.memory[a.memory.length - 1]);
             });
         }
-        console.log(sortedCards);
 
         const start = (currentPage - 1) * productPerPage;
         const end = start + productPerPage;

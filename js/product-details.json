@@ -3,14 +3,14 @@
         "id": 0,
         "fullName": "Apple iPhone 11 (MQ233)",
         "name": "Apple iPhone 11",
-        "mainPhoto": "./img/catalog/products/iphone/Iphone-11/Iphone-11-white-big.png",
+        "mainPhoto": "img/catalog/products/iphone/iphone-11/iphone-11-white-big.png",
         "currentColor": null,
         "colors": {
             "white": [
-                "./img/catalog/products/iphone/Iphone-11/Iphone-11-white.png",
-                "./img/catalog/products/iphone/Iphone-11/Iphone-11-white-front.png",
-                "./img/catalog/products/iphone/Iphone-11/Iphone-11-white-behind.png",
-                "./img/catalog/products/iphone/Iphone-11/Iphone-11-white-askance.png"
+                "img/catalog/products/iphone/iphone-11/iphone-11-white.png",
+                "img/catalog/products/iphone/iphone-11/iphone-11-white-front.png",
+                "img/catalog/products/iphone/iphone-11/iphone-11-white-behind.png",
+                "img/catalog/products/iphone/iphone-11/iphone-11-white-askance.png"
             ]
         },
         "specs": {
@@ -40,14 +40,14 @@
         "id": 1,
         "fullName": "Apple iPhone 13 mini (MLK23)",
         "name": "Apple iPhone 13 mini",
-        "mainPhoto": "./img/catalog/products/iphone/Iphone-13-mini/Iphone-13-mini-pink-big.png",
+        "mainPhoto": "img/catalog/products/iphone/iphone-13-mini/iphone-13-mini-pink-big.png",
         "currentColor": null,
         "colors": {
             "pink": [
-                "./img/catalog/products/iphone/Iphone-13-mini/Iphone-13-mini-pink.png",
-                "./img/catalog/products/iphone/Iphone-13-mini/Iphone-13-mini-pink-front.png",
-                "./img/catalog/products/iphone/Iphone-13-mini/Iphone-13-mini-pink-behind.png",
-                "./img/catalog/products/iphone/Iphone-13-mini/Iphone-13-mini-pink-askance.png"
+                "img/catalog/products/iphone/iphone-13-mini/iphone-13-mini-pink.png",
+                "img/catalog/products/iphone/iphone-13-mini/iphone-13-mini-pink-front.png",
+                "img/catalog/products/iphone/iphone-13-mini/iphone-13-mini-pink-behind.png",
+                "img/catalog/products/iphone/iphone-13-mini/iphone-13-mini-pink-askance.png"
             ]
         },
         "specs": {
@@ -78,26 +78,26 @@
         "id": 2,
         "fullName": "Apple iPhone 14 Pro (MQ233)",
         "name": "Apple iPhone 14 Pro",
-        "mainPhoto": "./img/catalog/products/iphone/Iphone-14-Pro/iPhone-14-pro-Space-black/Iphone-14-pro-space-black-big.png",
+        "mainPhoto": "img/catalog/products/iphone/iphone-14-pro/iphone-14-pro-space-black/iphone-14-pro-space-black-big.png",
         "currentColor": null,
         "colors": {
             "space-black": [
-                "./img/catalog/products/iphone/Iphone-14-Pro/iPhone-14-pro-spaceBlack/Iphone-14-pro-spaceBlack.png",
-                "./img/catalog/products/iphone/Iphone-14-Pro/iPhone-14-pro-spaceBlack/Iphone-14-pro-spaceBlack-front.png",
-                "./img/catalog/products/iphone/Iphone-14-Pro/iPhone-14-pro-spaceBlack/Iphone-14-pro-spaceBlack-behind.png",
-                "./img/catalog/products/iphone/Iphone-14-Pro/iPhone-14-pro-spaceBlack/Iphone-14-pro-spaceBlack-askance.png"
+                "img/catalog/products/iphone/iphone-14-pro/iphone-14-pro-space-black/iphone-14-pro-space-black.png",
+                "img/catalog/products/iphone/iphone-14-pro/iphone-14-pro-space-black/iphone-14-pro-space-black-front.png",
+                "img/catalog/products/iphone/iphone-14-pro/iphone-14-pro-space-black/iphone-14-pro-space-black-behind.png",
+                "img/catalog/products/iphone/iphone-14-pro/iphone-14-pro-space-black/iphone-14-pro-space-black-askance.png"
             ],
             "silver": [
-                "./img/catalog/products/iphone/Iphone-14-Pro/iPhone-14-pro-silver/Iphone-14-pro-silver.png",
-                "./img/catalog/products/iphone/Iphone-14-Pro/iPhone-14-pro-silver/Iphone-14-pro-silver-front.png",
-                "./img/catalog/products/iphone/Iphone-14-Pro/iPhone-14-pro-silver/Iphone-14-pro-silver-behind.png",
-                "./img/catalog/products/iphone/Iphone-14-Pro/iPhone-14-pro-silver/Iphone-14-pro-silver-askance.png"
+                "img/catalog/products/iphone/iphone-14-pro/iphone-14-pro-silver/iphone-14-pro-silver.png",
+                "img/catalog/products/iphone/iphone-14-pro/iphone-14-pro-silver/iphone-14-pro-silver-front.png",
+                "img/catalog/products/iphone/iphone-14-pro/iphone-14-pro-silver/iphone-14-pro-silver-behind.png",
+                "img/catalog/products/iphone/iphone-14-pro/iphone-14-pro-silver/iphone-14-pro-silver-askance.png"
             ],
             "gold": [
-                "./img/catalog/products/iphone/Iphone-14-Pro/iPhone-14-pro-gold/Iphone-14-pro-gold.png",
-                "./img/catalog/products/iphone/Iphone-14-Pro/iPhone-14-pro-gold/Iphone-14-pro-gold-front.png",
-                "./img/catalog/products/iphone/Iphone-14-Pro/iPhone-14-pro-gold/Iphone-14-pro-gold-behind.png",
-                "./img/catalog/products/iphone/Iphone-14-Pro/iPhone-14-pro-gold/Iphone-14-pro-gold-askance.png"
+                "img/catalog/products/iphone/iphone-14-pro/iphone-14-pro-gold/iphone-14-pro-gold.png",
+                "img/catalog/products/iphone/iphone-14-pro/iphone-14-pro-gold/iphone-14-pro-gold-front.png",
+                "img/catalog/products/iphone/iphone-14-pro/iphone-14-pro-gold/iphone-14-pro-gold-behind.png",
+                "img/catalog/products/iphone/iphone-14-pro/iphone-14-pro-gold/iphone-14-pro-gold-askance.png"
             ]
         },
         "specs": {
@@ -130,14 +130,14 @@
         "id": 3,
         "fullName": "Apple iPhone 14 Pro Max (MQ0G3)",
         "name": "Apple iPhone 14 Pro Max",
-        "mainPhoto": "./img/catalog/products/iphone/Iphone-14-Pro-Max/iPhone-14-Pro-Deep-purple/Iphone-14-pro-128gb-deep-purple.png-big",
+        "mainPhoto": "img/catalog/products/iphone/iphone-14-pro-max/iphone-14-pro-deep-purple/iphone-14-pro-128gb-deep-purple.png-big",
         "currentColor": null,
         "colors": {
             "deep-purple": [
-                "./img/catalog/products/iphone/Iphone-14-ProMax/iPhone-14-proMax-deepPurple/Iphone-14-proMax-deepPurple.png",
-                "./img/catalog/products/iphone/Iphone-14-ProMax/iPhone-14-proMax-deepPurple/Iphone-14-proMax-deepPurple-front.png",
-                "./img/catalog/products/iphone/Iphone-14-ProMax/iPhone-14-proMax-deepPurple/Iphone-14-proMax-deepPurple-behind.png",
-                "./img/catalog/products/iphone/Iphone-14-ProMax/iPhone-14-proMax-deepPurple/Iphone-14-proMax-deepPurple-askance.png"
+                "img/catalog/products/iphone/iphone-14-pro-max/iphone-14-pro-max-deep-purple/iphone-14-pro-max-deep-purple.png",
+                "img/catalog/products/iphone/iphone-14-pro-max/iphone-14-pro-max-deep-purple/iphone-14-pro-max-deep-purple-front.png",
+                "img/catalog/products/iphone/iphone-14-pro-max/iphone-14-pro-max-deep-purple/iphone-14-pro-max-deep-purple-behind.png",
+                "img/catalog/products/iphone/iphone-14-pro-max/iphone-14-pro-max-deep-purple/iphone-14-pro-max-deep-purple-askance.png"
             ]
         },
         "specs": {
@@ -166,5 +166,4 @@
         "description": "The iPhone 14 Pro Max is the ultimate iPhone with its massive 6.7-inch Super Retina XDR display featuring ProMotion and Always-On capability. The A16 Bionic chip delivers exceptional performance, while the longest battery life in the lineup and pro-level camera system make it ideal for demanding users.",
         "detailsDescription": "The 48MP main sensor with advanced computational photography captures incredible detail, supported by 3x optical zoom and Cinematic mode in 4K Dolby Vision. Dynamic Island transforms notifications into interactive experiences. Additional safety features like Crash Detection, premium stainless steel construction, and superior water resistance ensure reliability in any situation."
     }
-
 }
