@@ -113,6 +113,8 @@
 .shopping-cart__product-photo {
     width: 90px;
     height: 90px;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -259,4 +261,5 @@ input#promoCode, .summary__card-number .input-group {
     .shopping-cart__product-info {
         width: 100%;
     }
+
 };
