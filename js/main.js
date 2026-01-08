@@ -103,7 +103,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         let allProducts = Object.values(allProductsObjects);
-        console.log(Array.isArray(allProducts));
 
         const priceInputMin = document.getElementById('priceMin');
         const priceInputMax = document.getElementById('priceMax');

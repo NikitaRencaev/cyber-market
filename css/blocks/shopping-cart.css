@@ -110,6 +110,11 @@
     color: #545454;
 }
 
+.shopping-cart__product-photo {
+    width: 90px;
+    height: 90px;
+}
+
 
 
 .summary {

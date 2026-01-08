@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
     
     function favoriteCards() {
         selectedProductsList.innerHTML = '';
-        let subtotal = 0;
 
         if (selectedProducts.length > 0) {
             selectedProducts.forEach(product => {
@@ -13,8 +12,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 const div = document.createElement('div');
                 div.classList.add('shopping-cart__product');
                 div.dataset.id = selectProduct.id;
+                console.log(selectProduct.id);
                 div.innerHTML = `
-                    <img src="${selectProduct.photo}" alt="Product photo" class="shopping-cart__product-img">
+                    <div class="shopping-cart__product-photo">
+                        <img src="${selectProduct.photo}" alt="Product photo" class="shopping-cart__product-img">
+                    </div>
 
                     <div class="shopping-cart__product-content">
                         <div class="shopping-cart__product-info">
@@ -48,7 +50,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 const inputCounter = div.querySelector('.shopping-cart__product-counter-value'); // Счетчик товара
 
                 function changeTotalPrice() {
-                    subtotal = selectProduct.price * parseInt(inputCounter.value);
+                    let subtotal = 0;
+
+                    selectedProducts.forEach(product => {
+                        if (product.id == div.dataset.id) {
+                            product.subtotal = product.price * inputCounter.value;
+                        };
+
+                        subtotal += product.subtotal;
+                    });
 
                     const subtotalHTML = document.getElementById('subtotal');
                     const totalHTML = document.getElementById('total');
