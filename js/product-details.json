@@ -3,10 +3,12 @@
         "id": 0,
         "fullName": "Apple iPhone 11 (MQ233)",
         "name": "Apple iPhone 11",
-        "mainPhoto": "img/catalog/products/iphone/iphone-11/iphone-11-white-big.png",
-        "currentColor": null,
+        "mainPhoto": "img/catalog/products/iphone/iphone-11/iphone-11-white.png",
+        "type": "smartphone",
+        "code": "MQ233",
+        "brand": "Apple",
         "colors": {
-            "white": [
+            "White": [
                 "img/catalog/products/iphone/iphone-11/iphone-11-white.png",
                 "img/catalog/products/iphone/iphone-11/iphone-11-white-front.png",
                 "img/catalog/products/iphone/iphone-11/iphone-11-white-behind.png",
@@ -40,10 +42,12 @@
         "id": 1,
         "fullName": "Apple iPhone 13 mini (MLK23)",
         "name": "Apple iPhone 13 mini",
-        "mainPhoto": "img/catalog/products/iphone/iphone-13-mini/iphone-13-mini-pink-big.png",
-        "currentColor": null,
+        "mainPhoto": "img/catalog/products/iphone/iphone-13-mini/iphone-13-mini-pink.png",
+        "type": "smartphone",
+        "code": "MLK23",
+        "brand": "Apple",
         "colors": {
-            "pink": [
+            "Pink": [
                 "img/catalog/products/iphone/iphone-13-mini/iphone-13-mini-pink.png",
                 "img/catalog/products/iphone/iphone-13-mini/iphone-13-mini-pink-front.png",
                 "img/catalog/products/iphone/iphone-13-mini/iphone-13-mini-pink-behind.png",
@@ -78,22 +82,24 @@
         "id": 2,
         "fullName": "Apple iPhone 14 Pro (MQ233)",
         "name": "Apple iPhone 14 Pro",
-        "mainPhoto": "img/catalog/products/iphone/iphone-14-pro/iphone-14-pro-space-black/iphone-14-pro-space-black-big.png",
-        "currentColor": null,
+        "mainPhoto": "img/catalog/products/iphone/iphone-14-pro/iphone-14-pro-space-black/iphone-14-pro-space-black.png",
+        "type": "smartphone",
+        "code": "MQ233",
+        "brand": "Apple",
         "colors": {
-            "space-black": [
+            "Space-black": [
                 "img/catalog/products/iphone/iphone-14-pro/iphone-14-pro-space-black/iphone-14-pro-space-black.png",
                 "img/catalog/products/iphone/iphone-14-pro/iphone-14-pro-space-black/iphone-14-pro-space-black-front.png",
                 "img/catalog/products/iphone/iphone-14-pro/iphone-14-pro-space-black/iphone-14-pro-space-black-behind.png",
                 "img/catalog/products/iphone/iphone-14-pro/iphone-14-pro-space-black/iphone-14-pro-space-black-askance.png"
             ],
-            "silver": [
+            "Silver": [
                 "img/catalog/products/iphone/iphone-14-pro/iphone-14-pro-silver/iphone-14-pro-silver.png",
                 "img/catalog/products/iphone/iphone-14-pro/iphone-14-pro-silver/iphone-14-pro-silver-front.png",
                 "img/catalog/products/iphone/iphone-14-pro/iphone-14-pro-silver/iphone-14-pro-silver-behind.png",
                 "img/catalog/products/iphone/iphone-14-pro/iphone-14-pro-silver/iphone-14-pro-silver-askance.png"
             ],
-            "gold": [
+            "Gold": [
                 "img/catalog/products/iphone/iphone-14-pro/iphone-14-pro-gold/iphone-14-pro-gold.png",
                 "img/catalog/products/iphone/iphone-14-pro/iphone-14-pro-gold/iphone-14-pro-gold-front.png",
                 "img/catalog/products/iphone/iphone-14-pro/iphone-14-pro-gold/iphone-14-pro-gold-behind.png",
@@ -130,10 +136,12 @@
         "id": 3,
         "fullName": "Apple iPhone 14 Pro Max (MQ0G3)",
         "name": "Apple iPhone 14 Pro Max",
-        "mainPhoto": "img/catalog/products/iphone/iphone-14-pro-max/iphone-14-pro-deep-purple/iphone-14-pro-128gb-deep-purple.png-big",
-        "currentColor": null,
+        "mainPhoto": "img/catalog/products/iphone/iphone-14-pro-max/iphone-14-pro-max-deep-purple/iphone-14-pro-max-deep-purple.png",
+        "type": "smartphone",
+        "code": "MQ0G3",
+        "brand": "Apple",
         "colors": {
-            "deep-purple": [
+            "Deep-purple": [
                 "img/catalog/products/iphone/iphone-14-pro-max/iphone-14-pro-max-deep-purple/iphone-14-pro-max-deep-purple.png",
                 "img/catalog/products/iphone/iphone-14-pro-max/iphone-14-pro-max-deep-purple/iphone-14-pro-max-deep-purple-front.png",
                 "img/catalog/products/iphone/iphone-14-pro-max/iphone-14-pro-max-deep-purple/iphone-14-pro-max-deep-purple-behind.png",
@@ -165,5 +173,292 @@
         "price": 1600,
         "description": "The iPhone 14 Pro Max is the ultimate iPhone with its massive 6.7-inch Super Retina XDR display featuring ProMotion and Always-On capability. The A16 Bionic chip delivers exceptional performance, while the longest battery life in the lineup and pro-level camera system make it ideal for demanding users.",
         "detailsDescription": "The 48MP main sensor with advanced computational photography captures incredible detail, supported by 3x optical zoom and Cinematic mode in 4K Dolby Vision. Dynamic Island transforms notifications into interactive experiences. Additional safety features like Crash Detection, premium stainless steel construction, and superior water resistance ensure reliability in any situation."
+    },
+    "4": {
+        "id": 4,
+        "fullName": "Apple iPhone 12 (MGJ93RU/A)",
+        "name": "Apple iPhone 12",
+        "mainPhoto": "img/catalog/products/iphone/iphone-12/iphone-12-white.png",
+        "type": "smartphone",
+        "code": "MGJ93RU/A",
+        "brand": "Apple",
+        "colors": {
+            "White": [
+                "img/catalog/products/iphone/iphone-12/iphone-12-white.png",
+                "img/catalog/products/iphone/iphone-12/iphone-12-white-front.png",
+                "img/catalog/products/iphone/iphone-12/iphone-12-white-behind.png",
+                "img/catalog/products/iphone/iphone-12/iphone-12-white-askance.png"
+            ]
+        },
+        "specs": {
+            "screenSize": "6.1\"",
+            "screenResolution": "2532x1170",
+            "screenRefreshRate": "60 Hz",
+            "pixelDensity": "460 ppi",
+            "screenType": "Super Retina XDR OLED",
+            "screenAdditionally": ["HDR display", "True Tone", "Wide color (P3)", "Ceramic Shield"],
+            "cpu": "Apple A14 Bionic",
+            "cpuCores": "6",
+            "mainCamera": "12-12 MP",
+            "frontCamera": "12 MP",
+            "batteryCapacity": "2815 mAh",
+            "memory": ["128GB", "256GB"]
+        },
+        "lastPrice": 699,
+        "price": 599,
+        "description": "The iPhone 12 brings 5G connectivity and a sleek flat-edge design with a vibrant 6.1-inch Super Retina XDR display. Powered by the A14 Bionic chip, it offers excellent performance for gaming and multitasking. The dual-camera system captures sharp photos and 4K Dolby Vision video, while Ceramic Shield provides superior durability.",
+        "detailsDescription": "Featuring Night mode on both rear and front cameras, Smart HDR 3, and Deep Fusion for enhanced detail in every shot. With MagSafe wireless charging, IP68 water resistance, and iOS ecosystem integration, the iPhone 12 delivers premium features and all-day battery life in a compact, stylish package."
+    },
+
+    "5": {
+        "id": 5,
+        "fullName": "Apple iPhone 13 (MLPH3RU/A)",
+        "name": "Apple iPhone 13",
+        "mainPhoto": "img/catalog/products/iphone/iphone-13/iphone-13-red.png",
+        "type": "smartphone",
+        "code": "MLPH3RU/A",
+        "brand": "Apple",
+        "colors": {
+            "Red": [
+                "img/catalog/products/iphone/iphone-13/iphone-13-red.png",
+                "img/catalog/products/iphone/iphone-13/iphone-13-red-front.png",
+                "img/catalog/products/iphone/iphone-13/iphone-13-red-behind.png",
+                "img/catalog/products/iphone/iphone-13/iphone-13-red-askance.png"
+            ]
+        },
+        "specs": {
+            "screenSize": "6.1\"",
+            "screenResolution": "2532x1170",
+            "screenRefreshRate": "60 Hz",
+            "pixelDensity": "460 ppi",
+            "screenType": "Super Retina XDR OLED",
+            "screenAdditionally": ["HDR display", "True Tone", "Wide color (P3)", "Ceramic Shield"],
+            "cpu": "Apple A15 Bionic",
+            "cpuCores": "6",
+            "mainCamera": "12-12 MP",
+            "frontCamera": "12 MP",
+            "batteryCapacity": "3227 mAh",
+            "memory": ["128GB", "256GB", "512GB"]
+        },
+        "lastPrice": 799,
+        "price": 699,
+        "description": "The iPhone 13 delivers flagship performance with a bright 6.1-inch Super Retina XDR display and the powerful A15 Bionic chip. Its advanced dual-camera system with sensor-shift stabilization captures stunning photos and videos, while improved battery life keeps you going all day in a durable Ceramic Shield design.",
+        "detailsDescription": "Cinematic mode adds shallow depth of field to videos, and Photographic Styles let you personalize your shots. With longer battery life than previous models, 5G support, and enhanced low-light performance through larger sensors, the iPhone 13 offers premium features at a balanced price point."
+    },
+
+    "6": {
+        "id": 6,
+        "fullName": "Apple iPhone 15 (MTP63RU/A)",
+        "name": "Apple iPhone 15",
+        "mainPhoto": "img/catalog/products/iphone/iphone-15/iphone-15-pink.png",
+        "type": "smartphone",
+        "code": "MTP63RU/A",
+        "brand": "Apple",
+        "colors": {
+            "Pink": [
+                "img/catalog/products/iphone/iphone-15/iphone-15-pink.png",
+                "img/catalog/products/iphone/iphone-15/iphone-15-pink-front.png",
+                "img/catalog/products/iphone/iphone-15/iphone-15-pink-behind.png",
+                "img/catalog/products/iphone/iphone-15/iphone-15-pink-askance.png"
+            ]
+        },
+        "specs": {
+            "screenSize": "6.1\"",
+            "screenResolution": "2556x1179",
+            "screenRefreshRate": "60 Hz",
+            "pixelDensity": "460 ppi",
+            "screenType": "Super Retina XDR OLED",
+            "screenAdditionally": ["Dynamic Island", "HDR display", "True Tone", "Wide color (P3)", "Ceramic Shield"],
+            "cpu": "Apple A16 Bionic",
+            "cpuCores": "6",
+            "mainCamera": "48-12 MP",
+            "frontCamera": "12 MP",
+            "batteryCapacity": "3349 mAh",
+            "memory": ["128GB", "256GB", "512GB"]
+        },
+        "lastPrice": 899,
+        "price": 799,
+        "description": "The iPhone 15 features the innovative Dynamic Island and a powerful 48MP main camera on its 6.1-inch Super Retina XDR display. Powered by the A16 Bionic chip, it delivers smooth performance and efficiency. With USB-C connectivity and improved battery life, it's designed for modern everyday use.",
+        "detailsDescription": "The advanced computational photography includes 2x optical-quality zoom and next-generation portraits with Focus and Depth Control. Emergency SOS via satellite and Crash Detection add safety features, while the durable aerospace-grade aluminum design and Ceramic Shield front ensure longevity and protection."
+    },
+
+    "7": {
+        "id": 7,
+        "fullName": "Apple iPhone 15 Pro (MTUF3RU/A)",
+        "name": "Apple iPhone 15 Pro",
+        "mainPhoto": "img/catalog/products/iphone/iphone-15-pro/iphone-15-pro-silver.png",
+        "type": "smartphone",
+        "code": "MTUF3RU/A",
+        "brand": "Apple",
+        "colors": {
+            "Silver": [
+                "img/catalog/products/iphone/iphone-15-pro/iphone-15-pro-silver.png",
+                "img/catalog/products/iphone/iphone-15-pro/iphone-15-pro-silver-front.png",
+                "img/catalog/products/iphone/iphone-15-pro/iphone-15-pro-silver-behind.png",
+                "img/catalog/products/iphone/iphone-15-pro/iphone-15-pro-silver-askance.png"
+            ]
+        },
+        "specs": {
+            "screenSize": "6.1\"",
+            "screenResolution": "2556x1179",
+            "screenRefreshRate": "120 Hz",
+            "pixelDensity": "460 ppi",
+            "screenType": "Super Retina XDR OLED",
+            "screenAdditionally": ["Dynamic Island", "Always-On display", "ProMotion", "HDR display", "True Tone", "Wide color (P3)"],
+            "cpu": "Apple A17 Pro",
+            "cpuCores": "6",
+            "mainCamera": "48-12-12 MP",
+            "frontCamera": "12 MP",
+            "batteryCapacity": "3274 mAh",
+            "memory": ["128GB", "256GB", "512GB", "1TB"]
+        },
+        "lastPrice": 1099,
+        "price": 999,
+        "description": "The iPhone 15 Pro introduces a titanium design and the powerful A17 Pro chip with a 6.1-inch ProMotion display. Its pro camera system with 48MP main sensor and advanced video capabilities sets new standards for mobile photography and content creation in a lightweight, durable frame.",
+        "detailsDescription": "Featuring Action button for customizable shortcuts, USB-C with USB 3 speeds, and pro-level video recording including ProRes and Log. The triple-camera system offers 5x optical zoom on Pro Max model, while ray tracing-enabled graphics deliver console-quality gaming performance."
+    },
+
+    "8": {
+        "id": 8,
+        "fullName": "Apple iPhone SE 2022 (MMX93RU/A)",
+        "name": "Apple iPhone SE 2022",
+        "mainPhoto": "img/catalog/products/iphone/iphone-se-2022/iphone-se-2022-space-black.png",
+        "type": "smartphone",
+        "code": "MMX93RU/A",
+        "brand": "Apple",
+        "colors": {
+            "Space-black": [
+                "img/catalog/products/iphone/iphone-se-2022/iphone-se-2022-space-black.png",
+                "img/catalog/products/iphone/iphone-se-2022/iphone-se-2022-space-black-front.png",
+                "img/catalog/products/iphone/iphone-se-2022/iphone-se-2022-space-black-behind.png",
+                "img/catalog/products/iphone/iphone-se-2022/iphone-se-2022-space-black-askance.png"
+            ]
+        },
+        "specs": {
+            "screenSize": "4.7\"",
+            "screenResolution": "1334x750",
+            "screenRefreshRate": "60 Hz",
+            "pixelDensity": "326 ppi",
+            "screenType": "Retina HD LCD",
+            "screenAdditionally": ["True Tone", "Wide color (P3)", "Haptic Touch"],
+            "cpu": "Apple A15 Bionic",
+            "cpuCores": "6",
+            "mainCamera": "12 MP",
+            "frontCamera": "7 MP",
+            "batteryCapacity": "2018 mAh",
+            "memory": ["128GB", "256GB"]
+        },
+        "lastPrice": 529,
+        "price": 429,
+        "description": "The iPhone SE (2022) combines powerful A15 Bionic performance with a compact 4.7-inch design and Touch ID. It offers 5G connectivity, excellent camera capabilities with computational photography, and long software support in an affordable, classic iPhone form factor that fans love.",
+        "detailsDescription": "Despite its small size, it delivers flagship-level performance with Smart HDR 4, Photographic Styles, and Deep Fusion. The durable glass design with IP67 water resistance and wireless charging support make it a practical choice for users who prefer smaller phones with modern features."
+    },
+
+    "9": {
+        "id": 9,
+        "fullName": "Apple iPhone 12 mini (MGHU3RU/A)",
+        "name": "Apple iPhone 12 mini",
+        "mainPhoto": "img/catalog/products/iphone/iphone-12-mini/iphone-12-mini-deep-purple.png",
+        "type": "smartphone",
+        "code": "MGHU3RU/A",
+        "brand": "Apple",
+        "colors": {
+            "Deep-purple": [
+                "img/catalog/products/iphone/iphone-12-mini/iphone-12-mini-deep-purple.png",
+                "img/catalog/products/iphone/iphone-12-mini/iphone-12-mini-deep-purple-front.png",
+                "img/catalog/products/iphone/iphone-12-mini/iphone-12-mini-deep-purple-behind.png",
+                "img/catalog/products/iphone/iphone-12-mini/iphone-12-mini-deep-purple-askance.png"
+            ]
+        },
+        "specs": {
+            "screenSize": "5.4\"",
+            "screenResolution": "2340x1080",
+            "screenRefreshRate": "60 Hz",
+            "pixelDensity": "476 ppi",
+            "screenType": "Super Retina XDR OLED",
+            "screenAdditionally": ["HDR display", "True Tone", "Wide color (P3)", "Ceramic Shield"],
+            "cpu": "Apple A14 Bionic",
+            "cpuCores": "6",
+            "mainCamera": "12-12 MP",
+            "frontCamera": "12 MP",
+            "batteryCapacity": "2227 mAh",
+            "memory": ["128GB", "256GB"]
+        },
+        "lastPrice": 649,
+        "price": 549,
+        "description": "The iPhone 12 mini offers full flagship experience in the smallest form factor with a brilliant 5.4-inch Super Retina XDR display and A14 Bionic chip. Its dual-camera system and 5G capability deliver premium performance while fitting comfortably in one hand.",
+        "detailsDescription": "Featuring Night mode, Deep Fusion, and Smart HDR 3 for exceptional photography in a compact body. With MagSafe accessories, IP68 rating, and Ceramic Shield protection, it combines cutting-edge technology with the convenience of a truly pocketable iPhone design."
+    },
+
+    "10": {
+        "id": 10,
+        "fullName": "Apple iPhone 15 Plus (MU0E3RU/A)",
+        "name": "Apple iPhone 15 Plus",
+        "mainPhoto": "img/catalog/products/iphone/iphone-15-plus/iphone-15-plus-space-black.png",
+        "type": "smartphone",
+        "code": "MU0E3RU/A",
+        "brand": "Apple",
+        "colors": {
+            "Space-black": [
+                "img/catalog/products/iphone/iphone-15-plus/iphone-15-plus-space-black.png",
+                "img/catalog/products/iphone/iphone-15-plus/iphone-15-plus-space-black-front.png",
+                "img/catalog/products/iphone/iphone-15-plus/iphone-15-plus-space-black-behind.png",
+                "img/catalog/products/iphone/iphone-15-plus/iphone-15-plus-space-black-askance.png"
+            ]
+        },
+        "specs": {
+            "screenSize": "6.7\"",
+            "screenResolution": "2796x1290",
+            "screenRefreshRate": "60 Hz",
+            "pixelDensity": "460 ppi",
+            "screenType": "Super Retina XDR OLED",
+            "screenAdditionally": ["Dynamic Island", "HDR display", "True Tone", "Wide color (P3)", "Ceramic Shield"],
+            "cpu": "Apple A16 Bionic",
+            "cpuCores": "6",
+            "mainCamera": "48-12 MP",
+            "frontCamera": "12 MP",
+            "batteryCapacity": "4383 mAh",
+            "memory": ["128GB", "256GB", "512GB"]
+        },
+        "lastPrice": 999,
+        "price": 899,
+        "description": "The iPhone 15 Plus features a large 6.7-inch Super Retina XDR display with Dynamic Island and exceptional battery life. Powered by the A16 Bionic chip and 48MP camera system, it offers premium features and all-day performance in a spacious, comfortable design.",
+        "detailsDescription": "With USB-C charging, Emergency SOS via satellite, and Crash Detection safety features, plus advanced photography capabilities including 2x optical-quality zoom and next-generation portraits. The durable aluminum design and longest battery life in the standard lineup make it perfect for extended use."
+    },
+
+    "11": {
+        "id": 11,
+        "fullName": "Apple iPhone 13 Pro (MLVA3RU/A)",
+        "name": "Apple iPhone 13 Pro",
+        "mainPhoto": "img/catalog/products/iphone/iphone-13-pro/iphone-13-pro-gold.png",
+        "type": "smartphone",
+        "code": "MLVA3RU/A",
+        "brand": "Apple",
+        "colors": {
+            "Gold": [
+                "img/catalog/products/iphone/iphone-13-pro/iphone-13-pro-gold.png",
+                "img/catalog/products/iphone/iphone-13-pro/iphone-13-pro-gold-front.png",
+                "img/catalog/products/iphone/iphone-13-pro/iphone-13-pro-gold-behind.png",
+                "img/catalog/products/iphone/iphone-13-pro/iphone-13-pro-gold-askance.png"
+            ]
+        },
+        "specs": {
+            "screenSize": "6.1\"",
+            "screenResolution": "2532x1170",
+            "screenRefreshRate": "120 Hz",
+            "pixelDensity": "460 ppi",
+            "screenType": "Super Retina XDR OLED",
+            "screenAdditionally": ["ProMotion", "HDR display", "True Tone", "Wide color (P3)", "Ceramic Shield"],
+            "cpu": "Apple A15 Bionic",
+            "cpuCores": "6",
+            "mainCamera": "12-12-12 MP",
+            "frontCamera": "12 MP",
+            "batteryCapacity": "3095 mAh",
+            "memory": ["128GB", "256GB", "512GB", "1TB"]
+        },
+        "lastPrice": 999,
+        "price": 899,
+        "description": "The iPhone 13 Pro introduced ProMotion 120Hz display and pro camera system with macro photography on a 6.1-inch Super Retina XDR screen. Powered by A15 Bionic, it delivers exceptional performance, cinematic video capabilities, and all-day battery in a premium stainless steel design.",
+        "detailsDescription": "Featuring triple-camera system with 3x optical zoom, LiDAR scanner for Night mode portraits, and ProRes video recording. The adaptive refresh rate saves battery while providing smooth scrolling, making it ideal for professionals and content creators seeking advanced features."
     }
 }

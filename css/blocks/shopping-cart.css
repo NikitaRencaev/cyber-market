@@ -70,8 +70,9 @@
 
 .shopping-cart__product-right {
     display: flex;
+    width: 230px;
     align-items: center;
-    gap: 24px;
+    justify-content: space-between;
 }
 
 .shopping-cart__product-counter {
@@ -80,8 +81,8 @@
     gap: 8px;
 }
 .shopping-cart__product-counter-value {
-    max-width: 40px;
-    max-height: 32px;
+    max-width: 42px;
+    height: 32px;
     padding: 8px 16px;
     box-shadow: 0 0 0 0.5px #D9D9D9;
     border-radius: 4px;

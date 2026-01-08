@@ -14,19 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     // 
 
-    // Смена количества памяти товара
-    const productMemory = [...document.getElementById('productMemory').childNodes].filter(btn => btn.tagName === 'BUTTON');
-
-    productMemory.forEach(btn => {
-        btn.addEventListener('click', () => {
-            if (btn.classList.contains('noactive') === false) {
-                productMemory.forEach(btn => btn.classList.remove('active'));
-                btn.classList.add('active');
-            };
-        });
-    });
-    // 
-
     // Генерация страницы описания товара
     const urlParams = new URLSearchParams(window.location.search);
     const productId = urlParams.get('id');
@@ -94,7 +81,22 @@ document.addEventListener('DOMContentLoaded', () => {
                     btn.classList.add('noactive');
                 }
             });
-            productMemoryBtns.filter(btn => !btn.classList.contains('noactive'))[0].classList.add('active');
+            const activeMemoryButtons = productMemoryBtns.filter(btn => !btn.classList.contains('noactive'))
+            activeMemoryButtons[0].classList.add('active');
+
+            let currentMemory = activeMemoryButtons[0].value;
+            product.currentMemory = currentMemory;
+            
+            activeMemoryButtons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    if (!btn.classList.contains('active')) {
+                        activeMemoryButtons.forEach(btn => btn.classList.remove('active'));
+                        btn.classList.add('active');
+                        currentMemory = btn.value;
+                        product.currentMemory = currentMemory;
+                    }
+                });
+            });
 
             // Генерация кнопок смены цвета
             const productColorBtns = [...document.getElementById('colorBtns').childNodes].filter(btn => btn.tagName === "BUTTON");
@@ -109,14 +111,13 @@ document.addEventListener('DOMContentLoaded', () => {
             });
             const activeColorBtns = productColorBtns.filter(btn => btn.classList.contains('active'));
             let currentColor = activeColorBtns[0].value;
+            product.currentColor = currentColor;
 
             activeColorBtns.forEach(btn => {
-                product.currentColor = btn.value;
-                console.log(product.currentColor); 
                 btn.addEventListener('click', () => {
                     if (currentColor !== btn.value) {
                         currentColor = btn.value;
-                        product.currentColor = btn.value;
+                        product.currentColor = currentColor;
                         changePhotos(currentColor);
                     };
                 });
@@ -125,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Генерация фотографий
             function changePhotos(color) {
                 const gallery = document.getElementById('productSwitchPhotos');
-                gallery.innerHTML = '';  // очищаем
+                gallery.innerHTML = '';
                 product.colors[color].forEach(photoSrc => {
                     const img = document.createElement('img');
                     img.src = photoSrc;
@@ -160,13 +161,13 @@ document.addEventListener('DOMContentLoaded', () => {
             // Добавление товара в корзину
             const btnAddCard = document.getElementById('addCard');
             btnAddCard.addEventListener('click', () => {
-                let favorites = JSON.parse(localStorage.getItem('selectedProductsId')) || [];
-                const productIdStr = String(product.id);
+                let favorites = JSON.parse(localStorage.getItem('selectedProducts')) || [];
+                const selectProduct = { name: product.name, photo: product.colors[product.currentColor][0], color: product.currentColor, memory: product.currentMemory, price: product.price, id: product.id };
 
-                if (!favorites.includes(`${productIdStr}, ${product.currentColor}`)) {
-                    favorites.push(String(`${productIdStr}, ${product.currentColor}`));
+                function addToCart() {
+                    favorites.push(selectProduct);
                     console.log(favorites);
-                    localStorage.setItem('selectedProductsId', JSON.stringify(favorites));
+                    localStorage.setItem('selectedProducts', JSON.stringify(favorites));
                     btnAddCard.textContent = 'Added to cart';
                     btnAddCard.classList.add('active');
                     console.log('Добавлен в корзину');
@@ -180,13 +181,23 @@ document.addEventListener('DOMContentLoaded', () => {
                     // 
                     setTimeout(() => {
                         btnAddCard.classList.remove('active');
-                    }, 1000);
-                } else {
-                    btnAddCard.textContent = 'Already in cart';
-                    setTimeout(() => {
                         btnAddCard.textContent = 'Add to Cart';
-                    }, 800);
+                    }, 1000);
                 }
+
+                if (favorites.length == 0) 
+                    addToCart()
+                else {
+                    if (!favorites.some(product => JSON.stringify(product) === JSON.stringify(selectProduct))) {
+                        addToCart();
+                    } else {
+                        console.log(selectProduct);
+                        btnAddCard.textContent = 'Already in cart';
+                        setTimeout(() => {
+                            btnAddCard.textContent = 'Add to Cart';
+                        }, 800);
+                    }
+                };
 
                 console.log(favorites);
             });

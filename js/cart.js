@@ -1,89 +1,100 @@
 document.addEventListener('DOMContentLoaded', () => {
-    let selectedProductsId = JSON.parse(localStorage.getItem('selectedProductsId')) || [];
+    let selectedProducts = JSON.parse(localStorage.getItem('selectedProducts')) || [];
     const selectedProductsList = document.getElementById('selectedProductsList');
+    console.log(selectedProducts);
     
     function favoriteCards() {
         selectedProductsList.innerHTML = '';
         let subtotal = 0;
 
-        if (selectedProductsId.length > 0) {
-            selectedProductsId.forEach(id => {
-                const optionsProduct = id.split(', ');
+        if (selectedProducts.length > 0) {
+            selectedProducts.forEach(product => {
+                const selectProduct = product;
+                const div = document.createElement('div');
+                div.classList.add('shopping-cart__product');
+                div.dataset.id = selectProduct.id;
+                div.innerHTML = `
+                    <img src="${selectProduct.photo}" alt="Product photo" class="shopping-cart__product-img">
 
-                fetch('js/product-details.json')
-                    .then(response => {
-                        if (!response.ok) throw new Error('Файл не найден');
-                        return response.json();
-                    })
-                .then(data => {
-                    const selectedProduct = data[optionsProduct[0]];
-
-                    if(!selectedProduct) {
-                        console.error('Товар не найден!');
-                        return;
-                    }
-
-                    const div = document.createElement('div');
-                    div.classList.add('shopping-cart__product');
-                    div.dataset.id = id[0];
-                    div.innerHTML = `
-                        <img src="${selectedProduct.colors[optionsProduct[1]][0]}" alt="Product photo" class="shopping-cart__product-img">
-
-                        <div class="shopping-cart__product-content">
-                            <div class="shopping-cart__product-info">
-                                <h3 class="shopping-cart__product-name">
-                                    ${selectedProduct.name} ${optionsProduct[1]}
-                                </h3>
-                                <p class="shopping-cart__product-id">
-                                    #${selectedProduct.id}
-                                </p>
-                            </div>
-                            <div class="shopping-cart__product-right">
-                                <div class="shopping-cart__product-counter">
-                                    <button class="shopping-cart__product-counter-back">
-                                        <img src="./img/shopping-cart/back-counter-icon.svg" alt="back counter">
-                                    </button>
-                                    <input type="text" class="shopping-cart__product-counter-value" value="1" disabled>
-                                    <button class="shopping-cart__product-counter-forward">
-                                        <img src="./img/shopping-cart/forward-counter-icon.svg" alt="forward counter">
-                                    </button>
-                                </div>
-
-                                <span class="shopping-cart__product-price">$${selectedProduct.price}</span>
-
-                                <button class="shopping-cart__product-delete">
-                                    <img src="./img/shopping-cart/delete-product-icon.svg" alt="delete product">
+                    <div class="shopping-cart__product-content">
+                        <div class="shopping-cart__product-info">
+                            <h3 class="shopping-cart__product-name">
+                                ${selectProduct.name} ${selectProduct.memory} ${selectProduct.color}
+                            </h3>
+                            <p class="shopping-cart__product-id">
+                                #${selectProduct.id}
+                            </p>
+                        </div>
+                        <div class="shopping-cart__product-right">
+                            <div class="shopping-cart__product-counter">
+                                <button class="shopping-cart__product-counter-back">
+                                    <img src="./img/shopping-cart/back-counter-icon.svg" alt="back counter">
+                                </button>
+                                <input type="text" class="shopping-cart__product-counter-value" value="1" disabled>
+                                <button class="shopping-cart__product-counter-forward">
+                                    <img src="./img/shopping-cart/forward-counter-icon.svg" alt="forward counter">
                                 </button>
                             </div>
-                        </div>
-                    `;
 
-                    subtotal += selectedProduct.price;
+                            <span class="shopping-cart__product-price">$${selectProduct.price}</span>
+
+                            <button class="shopping-cart__product-delete">
+                                <img src="./img/shopping-cart/delete-product-icon.svg" alt="delete product">
+                            </button>
+                        </div>
+                    </div>
+                `;
+
+                const inputCounter = div.querySelector('.shopping-cart__product-counter-value'); // Счетчик товара
+
+                function changeTotalPrice() {
+                    subtotal = selectProduct.price * parseInt(inputCounter.value);
 
                     const subtotalHTML = document.getElementById('subtotal');
                     const totalHTML = document.getElementById('total');
 
                     subtotalHTML.textContent = `$${subtotal}`;
                     totalHTML.textContent = `$${subtotal + 50 + 29}`;
+                }
 
-                    selectedProductsList.appendChild(div);
+                selectedProductsList.appendChild(div);
 
-                    // Удаление продукта из корзины
-                    const deleteProductBtn = div.querySelector('.shopping-cart__product-delete');
-                    deleteProductBtn.addEventListener('click', () => {
-                        selectedProductsId.forEach(idBlock => {
-                            const idBlockArray = idBlock.split(', ');
-                            if (idBlockArray.includes(div.dataset.id)) {
-                                selectedProductsId = selectedProductsId.filter(id => id[0] !== idBlockArray[0]);
-                                console.log(selectedProductsId);
-                                console.log(idBlockArray);
-                                localStorage.setItem('selectedProductsId', JSON.stringify(selectedProductsId));
-                                selectedProductsList.removeChild(div);
-                                favoriteCards();
-                            }
-                        });
-                    });
+                // Удаление продукта из корзины
+                const deleteProductBtn = div.querySelector('.shopping-cart__product-delete');
+                deleteProductBtn.addEventListener('click', () => {
+                    selectedProducts = selectedProducts.filter(product => JSON.stringify(product) !== JSON.stringify(selectProduct));
+                    localStorage.setItem('selectedProducts', JSON.stringify(selectedProducts));
+                    inputCounter.value = 0;
+                    changeTotalPrice();
+                    favoriteCards();
                 });
+
+                // Прибавить/Убавить количество товара
+                const btnAdd = div.querySelector('.shopping-cart__product-counter-forward');
+                const btnReduce = div.querySelector('.shopping-cart__product-counter-back');
+
+                btnAdd.addEventListener('click', () => {
+                    if (parseInt(inputCounter.value) < 50) {
+                        inputCounter.value = parseInt(inputCounter.value) + 1;
+                        if (inputCounter.value >= 10) {
+                            inputCounter.style.maxWidth = '53px';
+                        }
+                        changeTotalPrice()
+                    }
+                });
+                btnReduce.addEventListener('click', () => {
+                    if (parseInt(inputCounter.value) > 1) {
+                        inputCounter.value = parseInt(inputCounter.value) - 1;
+                        if (inputCounter.value < 10) {
+                            inputCounter.style.maxWidth = '42px';
+                        }
+                    } else if (parseInt(inputCounter.value) === 1) {
+                        deleteProductBtn.click();
+                    }
+                    changeTotalPrice()
+                });
+
+                changeTotalPrice()
             });
         } else {
             selectedProductsList.innerHTML = `

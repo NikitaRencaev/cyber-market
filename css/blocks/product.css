@@ -102,12 +102,13 @@
     display: block;
 }
 
-.product__color-btn[value="space-black"] {background: black;}
-.product__color-btn[value="deep-purple"] {background: #781DBC;}
-.product__color-btn[value="pink"] {background: #ff10a3;}
-.product__color-btn[value="gold"] {background: #E1B000;}
-.product__color-btn[value="white"] {background: #ffffff; border: 1px solid black;}
-.product__color-btn[value="silver"] {background: #E8E8E8;}
+.product__color-btn[value="Space-black"] {background: black;}
+.product__color-btn[value="Deep-purple"] {background: #781DBC;}
+.product__color-btn[value="Pink"] {background: #ff10a3;}
+.product__color-btn[value="Gold"] {background: #E1B000;}
+.product__color-btn[value="White"] {background: #ffffff; border: 1px solid black;}
+.product__color-btn[value="Silver"] {background: #E8E8E8;}
+.product__color-btn[value="Red"] {background: #e90404;}
 
 .product__memory {
     display: flex;
