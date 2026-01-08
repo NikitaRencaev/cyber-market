@@ -107,8 +107,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 changeTotalPrice()
             });
         } else {
+            selectedProductsList.style.gap = '4px';
             selectedProductsList.innerHTML = `
                 <p class="shopping-cart__info-text">You haven't added any items to your cart yet.</p>
+                <a href="index.html">Continue Shopping</a>
             `;
         };
     };

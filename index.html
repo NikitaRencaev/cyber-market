@@ -6,7 +6,7 @@
     <title>Cyber - Онлайн маркет для покупок в интернете</title>
 
     <link rel="icon" href="./img/favicon.icon.ico">
-    <link rel="stylesheet" href="fonts/font-awesome/css/all.css" />
+    <link rel="stylesheet" href="fonts/font-awesome/css/all.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
@@ -33,13 +33,13 @@
                     </nav>
 
                     <div class="header__actions">
-                        <a class="header-actions__wishlist" aria-label="Избранное">
+                        <a class="header-actions__wishlist">
                             <img src="./img/header/wishlist-icon.svg" alt="Избранное">
                         </a>
 
                         <a class="header-actions__cart" href="./shopping-cart.html" aria-label="Корзина">
                             <img src="./img/header/cart-icon.svg" alt="Корзина">
-                            <span id="cartNotification"></span>
+                            <span class="cartNotification"></span>
                         </a>
 
                         <a href="#" aria-label="Профиль" class="header-actions__profile">
@@ -69,7 +69,7 @@
 
                             <a class="header-actions__cart" href="./shopping-cart.html" aria-label="Корзина">
                                 <img src="./img/header/cart-icon.svg" alt="Корзина">
-                                <span id="cartNotification"></span>
+                                <span class="cartNotification"></span>
                             </a>
 
                             <a href="#" aria-label="Профиль" class="header-actions__profile">
@@ -87,9 +87,9 @@
 
                     <div class="header__burger-menu">
                         <button class="header-burger-menu__btn" id="burgerMenuButton">
-                            <div class="header-burger-menu__line burger-line-1"></div>
-                            <div class="header-burger-menu__line burger-line-2"></div>
-                            <div class="header-burger-menu__line burger-line-3"></div>
+                            <span class="header-burger-menu__line burger-line-1"></span>
+                            <span class="header-burger-menu__line burger-line-2"></span>
+                            <span class="header-burger-menu__line burger-line-3"></span>
                         </button>
                     </div>
                 </div>
@@ -140,7 +140,7 @@
     </header>
     
     <main>
-        <section class="breadcrumbs">
+        <div class="breadcrumbs">
             <div class="container">
                 <nav class="breadcrumbs__nav">
                     <a href="#">Home</a>
@@ -150,7 +150,7 @@
                     <a href="#" class="active">Smartphones</a>
                 </nav>
             </div>
-        </section>
+        </div>
 
         <section class="catalog">
             <div class="container">
