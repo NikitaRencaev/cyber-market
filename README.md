@@ -19,6 +19,5 @@
 ![Главная страница](screenshots/home.jpg)
 ![Страница товара](screenshots/product.jpg)
 
-### Как запустить:
-1. Склонируй репозиторий
-2. Открой `index.html` в браузере
+### Посмотреть в живую
+[Live Demo](https://nikitarencaev.github.io/cyber-market/)
