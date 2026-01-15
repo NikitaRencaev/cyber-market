@@ -225,6 +225,7 @@
 
         .catalog-products-card__photo img {
             max-height: 160px;
+            min-height: 147px;
         }
 
         .catalog-products-card__info {
@@ -418,4 +419,5 @@
             z-index: 1;
         }
     /*  */
+
 }
