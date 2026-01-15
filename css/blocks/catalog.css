@@ -220,12 +220,12 @@
         }
 
         .catalog-products-card__photo {
+            height: 160px;
             margin-top: 16px;
         }
 
         .catalog-products-card__photo img {
             max-height: 160px;
-            min-height: 147px;
         }
 
         .catalog-products-card__info {
@@ -421,3 +421,4 @@
     /*  */
 
 }
+
